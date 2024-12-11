@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Header section */
 header {
     text-align: center;
