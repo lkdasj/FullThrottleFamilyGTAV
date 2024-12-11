@@ -251,6 +251,11 @@ footer {
         font-size: 1rem; /* Reducir el tamaño de los párrafos */
     }
 
+    .explore-card img {
+        width: 40%;
+        height: auto;
+    }
+
     /* Botón "Únete ahora" */
     .join-button {
         padding: 12px 25px; /* Reducir el tamaño del botón */
@@ -289,6 +294,11 @@ footer {
         background-repeat: no-repeat;
         color: #ffffff;
         line-height: 1.6;
+    }
+    
+    .explore-card img {
+        width: 40%;
+        height: auto;
     }
 
     /* Ajustes adicionales para pantallas muy pequeñas */
