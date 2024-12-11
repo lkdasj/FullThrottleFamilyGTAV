@@ -1,0 +1,220 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img-web/fondo1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 30px 0;
+}
+
+.header-image {
+    max-width: 30%; /* Aumenté el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agregué sombra suave */
+}
+
+/* Section styling */
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro y suave */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra adicional para las secciones */
+}
+
+/* Títulos de las secciones */
+section h2 {
+    font-size: 2.5rem; /* Aumenté el tamaño de los títulos */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff7043; /* Color de los títulos en naranja suave */
+    text-transform: uppercase;
+}
+
+/* Estilo de los párrafos */
+section p, section ul {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* Listas de reglas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('img-web/checkmark.png') no-repeat left center; /* Agregué un ícono de marca */
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Sección que contiene el botón */
+#join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Botón "Únete ahora" */
+.join-button {
+    display: inline-block;
+    background-color: #ff7043; /* Naranja suave */
+    color: white;
+    padding: 14px 30px; /* Aumenté el tamaño del padding para hacerlo más grande */
+    text-decoration: none;
+    border-radius: 50px; /* Borde redondeado completo */
+    font-size: 1.5em; /* Aumenté el tamaño del texto */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para todos los efectos */
+}
+
+/* Efecto hover para el botón */
+.join-button:hover {
+    background-color: #e64a19; /* Cambio de color más oscuro al pasar el ratón */
+    transform: scale(1.1); /* Agranda el botón ligeramente */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para dar un efecto de elevación */
+}
+
+/* Efecto al hacer clic */
+.join-button:active {
+    transform: scale(1.05); /* Disminuye el tamaño del botón cuando se hace clic */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Vuelve la sombra a su tamaño original */
+}
+
+/* Contenedor de botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Botones sociales individuales */
+.social-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px; /* Tamaño más grande para íconos más visibles */
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 2em; /* Aumenta el tamaño de los iconos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 60px; /* Controla el tamaño de los botones */
+    height: 60px;
+    overflow: hidden; /* Asegura que los iconos estén centrados dentro del círculo */
+}
+
+/* Efecto hover para los botones sociales */
+.social-button:hover {
+    background-color: #ff7043; /* Cambio de color */
+    transform: scale(1.1) rotate(15deg); /* Escala y rotación ligera */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumento de sombra */
+}
+
+/* Efecto al hacer clic */
+.social-button:active {
+    transform: scale(1.05) rotate(0deg); /* Efecto al hacer clic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Vuelve la sombra a su tamaño original */
+}
+
+/* Estilo para los iconos */
+.social-button i {
+    font-size: 1.8em; /* Ajuste del tamaño del icono dentro del botón */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de rotación en los iconos al hacer hover */
+.social-button:hover i {
+    transform: rotate(360deg); /* Rotación completa del icono */
+}
+
+/* Estilo general para los botones de "Explora más" */
+#connect h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Color verde para el título */
+}
+
+.explore-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #333; /* Fondo oscuro */
+    border: 2px solid #4CAF50; /* Borde verde */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+    text-decoration: none;
+    color: #fff; /* Texto blanco */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.explore-card i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Iconos verdes */
+}
+.explore-card h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #fff; /* Títulos blancos */
+}
+
+.explore-card p {
+    font-size: 0.9em;
+    color: #ddd; /* Descripción en gris claro */
+}
+
+.explore-card:hover {
+    transform: scale(1.05);
+    background-color: #4CAF50; /* Fondo verde al hacer hover */
+    color: #fff; /* Asegura que el texto se vea bien sobre el verde */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    border-color: #fff; /* Borde blanco al pasar el ratón */
+}
+
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1rem;
+}
