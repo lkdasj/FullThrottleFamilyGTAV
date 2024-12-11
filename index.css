@@ -190,7 +190,10 @@ ul li {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
-
+.explore-card img {
+    width: 40%;
+    height: auto;
+}
 .explore-card i {
     font-size: 3em;
     margin-bottom: 10px;
