@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'New Rocker', system-ui;
     background-image: url('img-web/fondo1.png');
     background-size: cover;
     background-position: center;
@@ -47,6 +47,7 @@ section h2 {
 
 /* Estilo de los párrafos */
 section p, section ul {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     color: #f0f0f0;
     margin-bottom: 20px;
@@ -59,8 +60,9 @@ ul {
 }
 
 ul li {
-    background: url('img-web/checkmark.png') no-repeat left center; /* Agregué un ícono de marca */
+    background: url('img-web/') no-repeat left center; /* Agregué un ícono de marca */
     padding-left: 30px;
+    padding-right: 20px;
     margin-bottom: 10px;
 }
 
@@ -122,8 +124,8 @@ ul li {
     font-size: 2em; /* Aumenta el tamaño de los iconos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    width: 60px; /* Controla el tamaño de los botones */
-    height: 60px;
+    width: 50px; /* Controla el tamaño de los botones */
+    height: 50px;
     overflow: hidden; /* Asegura que los iconos estén centrados dentro del círculo */
 }
 
@@ -151,6 +153,11 @@ ul li {
     transform: rotate(360deg); /* Rotación completa del icono */
 }
 
+.connect {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* Estilo general para los botones de "Explora más" */
 #connect h2 {
     text-align: center;
@@ -172,8 +179,8 @@ ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     background-color: #333; /* Fondo oscuro */
     border: 2px solid #4CAF50; /* Borde verde */
     border-radius: 12px; /* Bordes redondeados */
@@ -209,7 +216,6 @@ ul li {
     border-color: #fff; /* Borde blanco al pasar el ratón */
 }
 
-
 /* Pie de página */
 footer {
     text-align: center;
@@ -223,12 +229,13 @@ footer {
 @media (max-width: 768px) {
     /* Encabezado */
     .header-image {
-        max-width: 60%; /* Reducir el tamaño de la imagen en dispositivos móviles */
+        max-width: 70%; /* Reducir el tamaño de la imagen en dispositivos móviles */
     }
 
     /* Secciones */
     section {
         padding: 20px;
+        margin: 30px;
     }
 
     /* Títulos de secciones */
@@ -261,21 +268,34 @@ footer {
     }
 
     .explore-card {
-        width: 100%;
-        max-width: 250px; /* Ajustar el tamaño de las tarjetas */
+        width: 90%;
+        max-width: 170px; /* Ajustar el tamaño de las tarjetas */
     }
 }
 
 /* Vista móvil extra pequeña (para dispositivos muy pequeños) */
 @media (max-width: 480px) {
+    body{
+        background: url(img-web/fondomovil.png);
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #ffffff;
+        line-height: 1.6;
+    }
+
     /* Ajustes adicionales para pantallas muy pequeñas */
     .header-image {
-        max-width: 60%;
+        max-width: 70%;
     }
 
     .explore-card {
         width: 90%;
-        max-width: 220px;
+        max-width: 170px;
     }
 
     .join-button {
