@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Vehículo</title>
+    <title>Full Throttle Garage</title>
     <link rel="stylesheet" href="estilo-detalle.css">
+    <link rel="icon" href="/img-web/icono.png">
 </head>
 <body>
     <header>
-        <h1>Detalles del Vehículo</h1>
-        <p>Obtén información detallada sobre el vehículo seleccionado.</p>
-        <button id="toggle-theme">Cambiar Modo</button>
+        <h1>Full Throttle Garage</h1>
+        <a href="/index.html">volver a inicio</a>
     </header>
+
+    <div id="descripcion">
+        <h2>Bienvenido al espacio definitivo para los amantes de los vehículos de GTA V!</h2>
+        <p>
+            Nuestra página está diseñada para ayudarte a:<br>
+            ◉ Organizar tu garaje: Descubre en qué categoría está cada vehículo y mantén todo en orden según tus preferencias.<br>
+            ◉ Crear colecciones únicas: Inspírate con temas como los mas rapidos, autos clásicos, superdeportivos, todoterrenos y mucho más.<br>
+            ◉ Explorar posibilidades: Encuentra ideas para personalizar y mejorar tus vehículos favoritos.<br>
+        </p>
+        <p>
+            Ya seas un coleccionista, un corredor o simplemente un fanático de los autos, 
+            en Full Throttle Garage encontrarás todo lo necesario para llevar tu pasión al siguiente nivel.<br>
+            ¡Empieza a explorar y convierte tu garaje en una obra maestra!
+        </p>
+    </div>
 
     <main>
         <!-- Botón para mostrar categorías -->
@@ -19,7 +34,6 @@
 
         <!-- Contenedor de categorías, inicialmente oculto -->
         <section id="categorias" style="display:none;">
-            <h2>Categorías de Vehículos</h2>
             <ul id="lista-categorias">
                 <li><button class="categoria-btn" data-categoria="aviones">Aviones</button></li>
                 <li><button class="categoria-btn" data-categoria="barcos">Barcos</button></li>
@@ -92,9 +106,12 @@
             button.addEventListener("click", function() {
                 const categoria = button.getAttribute("data-categoria");
                 mostrarVehiculos(categoria);
+
+                // Ocultar el botón de "Mostrar Categorías"
+                document.getElementById("categorias").style.display = "none";
             });
         });
-    
+
         // Función para mostrar vehículos según la categoría seleccionada
         function mostrarVehiculos(categoria) {
             const vehiculosLista = document.getElementById("vehiculos-lista");
@@ -162,28 +179,6 @@
             document.getElementById("vehiculos").style.display = "block";
         }
 
-        // thema de colores
-        const toggleThemeButton = document.getElementById("toggle-theme");
-
-        // Detectamos si ya existe una preferencia en el almacenamiento local del navegador
-        const currentTheme = localStorage.getItem('theme') || 'light'; // Por defecto, es 'light'
-
-        // Si el modo actual es oscuro, aplicamos el dark-mode
-        if (currentTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-
-        // Función para alternar entre modo claro y oscuro
-        toggleThemeButton.addEventListener("click", () => {
-            document.body.classList.toggle('dark-mode');
-
-            // Guardamos la preferencia del tema en localStorage para que persista entre recargas
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
     </script>
     
 </body>
