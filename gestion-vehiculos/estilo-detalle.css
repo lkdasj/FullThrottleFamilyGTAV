@@ -1,146 +1,257 @@
-/* Resetear algunos estilos predeterminados */
+/* Reseteo de márgenes y padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales del cuerpo */
+/* Variables globales para el modo claro y oscuro */
+:root {
+    --color-fondo-claro: #f4f4f4;
+    --color-fondo-oscuro: #121212;
+    --color-texto-claro: #333;
+    --color-texto-oscuro: #fff;
+    --color-boton-claro: #007BFF;
+    --color-boton-oscuro: #1e90ff;
+    --color-boton-hover-claro: #0056b3;
+    --color-boton-hover-oscuro: #0056b3;
+    --color-fondo-boton-claro: #28a745;
+    --color-fondo-boton-oscuro: #218838;
+    --color-fondo-categorias-claro: #fff;
+    --color-fondo-categorias-oscuro: #333;
+    --color-sombra-boton: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto-claro);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Cabecera */
-header {
-    background-color: #333;
-    color: #fff;
     padding: 20px;
-    text-align: center;
+    margin: 0;
+    transition: all 0.3s ease;
 }
 
-/* Título principal */
-header h1 {
-    font-size: 2.5em;
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-boton-claro);
     margin-bottom: 10px;
 }
 
-/* Subtítulo */
-header p {
-    font-size: 1.2em;
+p {
+    font-size: 1.1rem;
+    color: var(--color-texto-claro);
 }
 
-/* Botón de mostrar categorías */
-#mostrar-categorias {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #008CBA;
-    color: white;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#mostrar-categorias:hover {
-    background-color: #005f6b;
-}
-
-/* Contenedor de categorías */
+/* Estilos para el contenedor de categorías */
 #categorias {
-    background-color: white;
-    border-radius: 10px;
+    display: none;
+    background-color: var(--color-fondo-categorias-claro);
     padding: 20px;
-    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--color-sombra-boton);
+    margin-bottom: 40px;
 }
 
-/* Lista de categorías */
+#categorias h2 {
+    font-size: 2rem;
+    color: var(--color-boton-claro);
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de categorías */
 #lista-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     list-style-type: none;
+    padding: 0;
 }
 
 .categoria-btn {
-    background-color: #e7e7e7;
+    display: block;
+    padding: 15px;
+    background-color: var(--color-boton-claro);
+    color: white;
     border: none;
-    color: #333;
-    padding: 12px 24px;
-    margin: 5px;
-    width: 100%;
-    text-align: left;
-    font-size: 1.1em;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--color-sombra-boton);
 }
 
 .categoria-btn:hover {
-    background-color: #ddd;
+    background-color: var(--color-boton-hover-claro);
+    transform: translateY(-5px); /* Efecto de levantado */
 }
 
-/* Contenedor de vehículos */
-#vehiculos {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: white;
+.categoria-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--color-boton-claro);
+}
+
+/* Estilo para el botón de mostrar categorías */
+#mostrar-categorias {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-fondo-boton-claro);
+    color: white;
+    border: none;
     border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px var(--color-sombra-boton);
+}
+
+#mostrar-categorias:hover {
+    background-color: var(--color-fondo-boton-claro);
+}
+
+/* Estilos para el contenedor de vehículos */
+#vehiculos {
+    display: none;
+    margin-top: 30px;
+}
+
+#vehiculos h2 {
+    font-size: 2rem;
+    color: var(--color-boton-claro);
+    margin-bottom: 20px;
 }
 
 .vehiculo-item {
+    background-color: var(--color-fondo-categorias-claro);
+    padding: 20px;
     margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px var(--color-sombra-boton);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehiculo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--color-sombra-boton);
 }
 
 .vehiculo-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-width: 300px;
-    margin: 10px 0;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .vehiculo-item h3 {
-    font-size: 1.6em;
+    color: var(--color-boton-claro);
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
 .vehiculo-item p {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1.1rem;
+    color: var(--color-texto-claro);
 }
 
-/* Pie de página */
-footer {
-    text-align: center;
-    background-color: #333;
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    color: var(--color-boton-claro);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-boton-hover-claro);
+}
+
+/* Estilos de carga de lista de vehículos */
+#vehiculos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.vehiculo-item a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Estilos para la paginación de vehículos */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.paginacion button {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--color-boton-claro);
     color: white;
-    padding: 10px;
-    margin-top: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-footer p {
-    font-size: 1.2em;
+.paginacion button:hover {
+    background-color: var(--color-boton-hover-claro);
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
+.paginacion button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 
-    header p {
-        font-size: 1em;
-    }
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-oscuro);
+}
 
-    .vehiculo-item img {
-        max-width: 100%;
-    }
+body.dark-mode #categorias {
+    background-color: var(--color-fondo-categorias-oscuro);
+}
+
+body.dark-mode #lista-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+body.dark-mode .categoria-btn {
+    background-color: var(--color-boton-oscuro);
+    color: white;
+}
+
+body.dark-mode .categoria-btn:hover {
+    background-color: var(--color-boton-hover-oscuro);
+}
+
+body.dark-mode #mostrar-categorias {
+    background-color: var(--color-fondo-boton-oscuro);
+}
+
+body.dark-mode .vehiculo-item {
+    background-color: var(--color-fondo-categorias-oscuro);
+    color: var(--color-texto-oscuro);
+}
+
+body.dark-mode .vehiculo-item h3 {
+    color: var(--color-boton-oscuro);
 }

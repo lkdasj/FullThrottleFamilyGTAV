@@ -1,6 +1,6 @@
 // Base de datos de aviones
 const aviones = [
-    { nombre: "Alpha-Z1", foto: "#", compra: "#" },
+    { nombre: "Alpha-Z1", foto: "#", compra: "holaaa" },
     { nombre: "Mammoth Avenger", foto: "#", compra: "#" },
     { nombre: "Avión de carga", foto: "#", compra: "#" },
     { nombre: "Western Avioneta fumigadora", foto: "#", compra: "#" },
