@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo</title>
+    <link rel="stylesheet" href="estilo-detalle.css">
+</head>
+<body>
+    <header>
+        <h1>Detalles del Vehículo</h1>
+        <p>Obtén información detallada sobre el vehículo seleccionado.</p>
+    </header>
+
+    <main>
+        <!-- Botón para mostrar categorías -->
+        <button id="mostrar-categorias">Mostrar Categorías</button>
+
+        <!-- Contenedor de categorías, inicialmente oculto -->
+        <section id="categorias" style="display:none;">
+            <h2>Categorías de Vehículos</h2>
+            <ul id="lista-categorias">
+                <li><button class="categoria-btn" data-categoria="aviones">Aviones</button></li>
+                <li><button class="categoria-btn" data-categoria="barcos">Barcos</button></li>
+                <li><button class="categoria-btn" data-categoria="bicis">Bicicletas</button></li>
+                <li><button class="categoria-btn" data-categoria="bolidos">Bolidos</button></li>
+                <li><button class="categoria-btn" data-categoria="camionetas">Camionetas</button></li>
+                <li><button class="categoria-btn" data-categoria="comerciales">Comerciales</button></li>
+                <li><button class="categoria-btn" data-categoria="compactos">Compactos</button></li>
+                <li><button class="categoria-btn" data-categoria="cupes">Cupés</button></li>
+                <li><button class="categoria-btn" data-categoria="deportivos-clasicos">Deportivos clasicos</button></li>
+                <li><button class="categoria-btn" data-categoria="deportivos">Deportivos</button></li>
+                <li><button class="categoria-btn" data-categoria="emergencias">Emergencias</button></li>
+                <li><button class="categoria-btn" data-categoria="especializados">Especializados</button></li>
+                <li><button class="categoria-btn" data-categoria="helicopteros">Helicopteros</button></li>
+                <li><button class="categoria-btn" data-categoria="industriales">Industriales</button></li>
+                <li><button class="categoria-btn" data-categoria="militares">Militares</button></li>
+                <li><button class="categoria-btn" data-categoria="motos">Motos</button></li>
+                <li><button class="categoria-btn" data-categoria="sedanes">Sedanes</button></li>
+                <li><button class="categoria-btn" data-categoria="servicio">Servicio</button></li>
+                <li><button class="categoria-btn" data-categoria="superVehiculos">Super</button></li>
+                <li><button class="categoria-btn" data-categoria="todocaminos">Todocaminos</button></li>
+                <li><button class="categoria-btn" data-categoria="todoterrenos">Todoterrenos</button></li>
+            </ul>
+        </section>
+
+        <!-- Contenedor de vehículos, inicialmente oculto -->
+        <section id="vehiculos" style="display:none;">
+            <h2>Vehículos</h2>
+            <div id="vehiculos-lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vehículos Especializados</p>
+    </footer>
+
+    <!-- Incluir archivos JS -->
+    <script src="aviones.js"></script>
+    <script src="barcos.js"></script>
+    <script src="bicis.js"></script>
+    <script src="bolidos.js"></script>
+    <script src="camionetas.js"></script>
+    <script src="comerciales.js"></script>
+    <script src="compactos.js"></script>
+    <script src="cupes.js"></script>
+    <script src="deportivos-clasicos.js"></script>    
+    <script src="deportivos.js"></script>    
+    <script src="emergencias.js"></script>    
+    <script src="especializados.js"></script>    
+    <script src="helicopteros.js"></script>
+    <script src="industriales.js"></script>
+    <script src="militares.js"></script>
+    <script src="motos.js"></script>
+    <script src="sedanes.js"></script>
+    <script src="servicio.js"></script>
+    <script src="super.js"></script>
+    <script src="todocaminos.js"></script>
+    <script src="todoterrenos.js"></script>
+
+    <script>
+        // Mostrar/ocultar categorías
+        document.getElementById("mostrar-categorias").addEventListener("click", function() {
+            const categorias = document.getElementById("categorias");
+            categorias.style.display = categorias.style.display === "none" ? "block" : "none";
+        });
+    
+        // Evento de clic en las categorías
+        const categoriaBtns = document.querySelectorAll(".categoria-btn");
+        categoriaBtns.forEach(button => {
+            button.addEventListener("click", function() {
+                const categoria = button.getAttribute("data-categoria");
+                mostrarVehiculos(categoria);
+            });
+        });
+    
+        // Función para mostrar vehículos según la categoría seleccionada
+        function mostrarVehiculos(categoria) {
+            const vehiculosLista = document.getElementById("vehiculos-lista");
+            vehiculosLista.innerHTML = ""; // Limpiar la lista antes de agregar nuevos vehículos
+    
+            // Lógica para cargar los vehículos dependiendo de la categoría
+            let vehiculos = [];
+            if (categoria === "aviones") {
+                vehiculos = aviones;  
+            } else if (categoria === "barcos") {
+                vehiculos = barcos;
+            } else if (categoria === "bicis") {
+                vehiculos = bici;  
+            } else if (categoria === "bolidos") {
+                vehiculos = bolidos;
+            } else if (categoria === "camionetas") {
+                vehiculos = camionetas;  
+            } else if (categoria === "comerciales") {
+                vehiculos = comerciales;  
+            } else if (categoria === "compactos") {
+                vehiculos = compactos;
+            } else if (categoria === "cupes") {
+                vehiculos = cupes;
+            } else if (categoria === "deportivos-clasicos") {
+                vehiculos = deportivosClasicos;
+            } else if (categoria === "deportivos") {
+                vehiculos = deportivos;
+            } else if (categoria === "emergencias") {
+                vehiculos = emergencias;
+            } else if (categoria === "especializados") {
+                vehiculos = especializados;
+            } else if (categoria === "helicopteros") {
+                vehiculos = helicopteros;
+            } else if (categoria === "industriales") {
+                vehiculos = industriales;
+            } else if (categoria === "militares") {
+                vehiculos = militares;
+            } else if (categoria === "motos") {
+                vehiculos = motos;
+            } else if (categoria === "sedanes") {
+                vehiculos = sedanes;
+            } else if (categoria === "servicio") {
+                vehiculos = servicio;
+            } else if (categoria === "superVehiculos") {
+                vehiculos = superVehiculos;
+            } else if (categoria === "todocaminos") {
+                vehiculos = todocaminos;
+            } else if (categoria === "todoterrenos") {
+                vehiculos = todoterrenos;
+            }
+    
+            // Mostrar los vehículos en la lista
+            vehiculos.forEach(vehiculo => {
+                const divVehiculo = document.createElement("div");
+                divVehiculo.classList.add("vehiculo-item");
+    
+                divVehiculo.innerHTML = `
+                    <h3>${vehiculo.nombre}</h3>
+                    <img src="${vehiculo.imagen}" alt="${vehiculo.nombre}" />
+                    <p>${vehiculo.compra}</p>
+                `;
+                vehiculosLista.appendChild(divVehiculo);
+            });
+    
+            // Mostrar la sección de vehículos
+            document.getElementById("vehiculos").style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>

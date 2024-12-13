@@ -1,0 +1,146 @@
+/* Resetear algunos estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+header p {
+    font-size: 1.2em;
+}
+
+/* Botón de mostrar categorías */
+#mostrar-categorias {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#mostrar-categorias:hover {
+    background-color: #005f6b;
+}
+
+/* Contenedor de categorías */
+#categorias {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Lista de categorías */
+#lista-categorias {
+    list-style-type: none;
+}
+
+.categoria-btn {
+    background-color: #e7e7e7;
+    border: none;
+    color: #333;
+    padding: 12px 24px;
+    margin: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.categoria-btn:hover {
+    background-color: #ddd;
+}
+
+/* Contenedor de vehículos */
+#vehiculos {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.vehiculo-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.vehiculo-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.vehiculo-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.vehiculo-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .vehiculo-item img {
+        max-width: 100%;
+    }
+}

@@ -46,7 +46,7 @@ section h2 {
     font-size: 2.5rem; /* Aumenté el tamaño de los títulos */
     text-align: center;
     margin-bottom: 20px;
-    color: #ff7043; /* Color de los títulos en naranja suave */
+    color: #fb5b2a; /* Color de los títulos en naranja suave */
     text-transform: uppercase;
 }
 
@@ -83,7 +83,7 @@ ul li {
 /* Botón "Únete ahora" */
 .join-button {
     display: inline-block;
-    background-color: #ff7043; /* Naranja suave */
+    background: linear-gradient(135deg, #ff7a00, #ff3e00); /* Gradiente de colores vibrantes */
     color: white;
     padding: 14px 30px; /* Aumenté el tamaño del padding para hacerlo más grande */
     text-decoration: none;
@@ -96,7 +96,7 @@ ul li {
 
 /* Efecto hover para el botón */
 .join-button:hover {
-    background-color: #e64a19; /* Cambio de color más oscuro al pasar el ratón */
+    background: linear-gradient(135deg, #ff4f00, #ff1a00); /* Cambia el gradiente al hacer hover */
     transform: scale(1.1); /* Agranda el botón ligeramente */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para dar un efecto de elevación */
 }
@@ -136,7 +136,7 @@ ul li {
 
 /* Efecto hover para los botones sociales */
 .social-button:hover {
-    background-color: #ff7043; /* Cambio de color */
+    background: linear-gradient(135deg, #ff7a00, #ff3e00); /* Gradiente de colores vibrantes */
     transform: scale(1.1) rotate(15deg); /* Escala y rotación ligera */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumento de sombra */
 }
@@ -158,71 +158,78 @@ ul li {
     transform: rotate(360deg); /* Rotación completa del icono */
 }
 
-.connect {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* Estilo general para los botones de "Explora más" */
-#connect h2 {
+/* Sección "Explora más" */
+#connect {
+    margin-top: 40px;
     text-align: center;
-    margin-bottom: 20px;
-    color: #4CAF50; /* Color verde para el título */
 }
 
 .explore-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en pantallas más pequeñas */
+    margin-top: 20px;
 }
 
 .explore-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 190px;
-    height: 190px;
-    background-color: #333; /* Fondo oscuro */
-    border: 2px solid #4CAF50; /* Borde verde */
-    border-radius: 12px; /* Bordes redondeados */
+    background: linear-gradient(135deg, #ff7a00, #ff3e00); /* Gradiente de colores vibrantes */
+    color: #fff;
+    border-radius: 12px;
     padding: 20px;
+    width: 200px; /* Tamaño moderado */
+    text-align: center;
     text-decoration: none;
-    color: #fff; /* Texto blanco */
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    overflow: hidden; /* Asegura que nada se salga del borde redondeado */
 }
-.explore-card img {
-    width: 40%;
-    height: auto;
-}
+
 .explore-card i {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #4CAF50; /* Iconos verdes */
+    font-size: 40px; /* Tamaño del icono más grande para hacerlo resaltar */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Animación para los iconos */
 }
+
 .explore-card h3 {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 0px;
-    color: #fff; /* Títulos blancos */
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Título en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-decoration: none;
 }
 
 .explore-card p {
-    font-size: 0.9em;
-    color: #ddd; /* Descripción en gris claro */
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.85; /* Texto ligeramente más transparente para un efecto elegante */
+    margin-bottom: 15px;
 }
 
 .explore-card:hover {
-    transform: scale(1.05);
-    background-color: #4CAF50; /* Fondo verde al hacer hover */
-    color: #fff; /* Asegura que el texto se vea bien sobre el verde */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-    border-color: #fff; /* Borde blanco al pasar el ratón */
+    transform: translateY(-10px); /* Levanta la tarjeta un poco al pasar el ratón */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff4f00, #ff1a00); /* Cambia el gradiente al hacer hover */
 }
+
+.explore-card:hover i {
+    transform: scale(1.1); /* Efecto de aumento en el icono al hacer hover */
+}
+
+/* Estilos adicionales */
+.explore-card:active {
+    transform: translateY(2px); /* Efecto de hundir la tarjeta al hacer clic */
+}
+
+.explore-card h3, .explore-card p {
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.explore-card:hover h3, .explore-card:hover p {
+    color: #fff; /* El texto cambia a blanco para resaltar con el fondo */
+}
+
 
 /* Pie de página */
 footer {
