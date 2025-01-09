@@ -8,6 +8,15 @@ body {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Header */
 header {
     background: linear-gradient(135deg, #1f1f1f, #3a3a3a); /* Gradiente oscuro */
@@ -16,6 +25,7 @@ header {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #f5a623;
+    font-family: 'New Rocker', system-ui;
 }
 
 header h1 {
@@ -29,7 +39,7 @@ header h1 {
 header a {
     color: #f5a623;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
     display: inline-block;
@@ -47,15 +57,16 @@ header a:hover {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
 #descripcion h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #f5a623; /* Tono vibrante para títulos */
     margin-bottom: 10px;
+    font-family: 'New Rocker', system-ui;
 }
 
 #descripcion p {
@@ -63,6 +74,34 @@ header a:hover {
     color: #d3d3d3;
     margin-bottom: 15px;
     text-align: left;
+}
+/* seccion de la lupa */
+#busqueda {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#input-busqueda {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#boton-busqueda {
+    padding: 10px;
+    background-color: #ff5500;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#boton-busqueda i {
+    font-size: 16px;
 }
 
 /* Botón de mostrar categorías */
@@ -76,6 +115,7 @@ header a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'new rocker', system-ui;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -97,7 +137,7 @@ header a:hover {
     gap: 10px; /* Espacio entre elementos */
     list-style: none;
     padding: 0;
-    max-width: 800px; /* Limitar el ancho máximo del contenedor */
+    max-width: 90%; /* Limitar el ancho máximo del contenedor */
     margin: 0 auto;
 }
 
@@ -121,10 +161,17 @@ header a:hover {
     transform: translateY(-3px);
 }
 
-/* Contenedor de vehículos */
+/*Seccion de Vehiculos*/
+#vehiculos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Las columnas serán de mínimo 250px y ajustables */
+    gap: 20px; /* Espacio entre las tarjetas de los vehículos */
+    padding: 20px;
+}
+
 #vehiculos {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90%;
     text-align: center;
     background-color: #1e1e1e;
     padding: 20px;
@@ -132,16 +179,25 @@ header a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#vehiculos h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+.vehiculo-item {
+    border: 1px solid #ff8800;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #262525;
+    text-align: center;
 }
 
-#vehiculos-lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+.vehiculo-item img {
+    width: 100%;
+    height: auto;
+    max-width: 190px;
+    border-radius: 10px;
+}
+
+.vehiculo-item h3 {
+    color: #f4f4f4;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 /* Footer */
@@ -149,7 +205,8 @@ footer {
     background: #1f1f1f;
     color: #f5a623;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 14px;
     border-top: 2px solid #f5a623;
+    font-family: 'New rocker', system-ui;
 }

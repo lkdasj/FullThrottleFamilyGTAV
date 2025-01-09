@@ -1,580 +1,580 @@
 537 vehiculos = 21 categorias
 
 Compactos (9):
-    - Dinka Blista	
-    - Grotti Brioso R/A	26
-    - Karin Dilettante	
-    - Karin Dilettante (II)
-    - Weeny Issi	
-    - WeenyIssi clásico 33	
-    - Benefactor Panto 9	
-    - Bollokan Prairie
-    - Declasse Rhapsody 9
+    Dinka Blista
+    Grotti Brioso R/A
+    Karin Dilettante
+    Karin Dilettante (II)
+    Weeny Issi
+    WeenyIssi clásico 33
+    Benefactor Panto 9
+    Bollokan Prairie
+    Declasse Rhapsody 9
 
 Sedanes (29): 
-    - Declasse Asea	
-    - Karin Asterope	
-    - Enus Cognoscenti 20	
-    - Enus Cognoscenti (blindado) 20
-    - Enus Cognoscenti 55 20	
-    - Enus Cognoscenti 55 (blindado) 20	
-    - Albany Emperor	
-    - Albany Emperor (II)
-    - Cheval Fugitive	
-    - Benefactor Glendale 9	
-    - Vulcan Ingot	
-    - Karin Intruder
-    - Benefactor Limusina con torreta 20	
-    - Declasse Premier	
-    - Albany Primo	
-    - Albany Primo personalizado 18
-    - Dundreary Regina	
-    - Chariot Romero Hearse	
-    - Benefactor Schafter	
-    - Benefactor Schafter LWB (blindado) 20
-    - Benefactor Schafter V12 (blindado) 20	
-    - Vapid Stanier	
-    - Zirconium Stratum	
-    - Dundreary Stretch
-    - Enus Super Diamond	
-    - Cheval Surge	
-    - Obey Tailgater	
-    - Vulcar Warrener 9
-    - Albany Washington
+    Declasse Asea
+    Karin Asterope
+    Enus Cognoscenti 
+    Enus Cognoscenti (blindado) 
+    Enus Cognoscenti 55 
+    Enus Cognoscenti 55 (blindado) 
+    Albany Emperor
+    Albany Emperor (II)
+    Cheval Fugitive
+    Benefactor Glendale 9
+    Vulcan Ingot
+    Karin Intruder
+    Benefactor Limusina con torreta 
+    Declasse Premier
+    Albany Primo
+    Albany Primo personalizado 18
+    Dundreary Regina
+    Chariot Romero Hearse
+    Benefactor Schafter
+    Benefactor Schafter LWB (blindado) 
+    Benefactor Schafter V12 (blindado) 
+    Vapid Stanier
+    Zirconium Stratum
+    Dundreary Stretch
+    Enus Super Diamond
+    Cheval Surge
+    Obey Tailgater
+    Vulcar Warrener 9
+    Albany Washington
 
 Bólidos (45):
-    - Vapid Blade 9	
-    - Albany Buccaneer	
-    - Albany Buccaneer personalizado 18	
-    - Declasse Burger Shot Stallion 13
-    - Vapid Chino 17	
-    - Vapid Chino personalizado 18	
-    - Invetero Coquette BlackFin 17	
-    - Vapid Dominator
-    - Vapid Dominator GTX 33	
-    - Imponte Duke O'Death 13	
-    - Imponte Dukes 13	
-    - Vapid Ellie 33
-    - Willard Faction 18	
-    - Willard Faction Donk personalizado 24	
-    - Willard Faction personalizado 18	
-    - Bravado Gauntlet
-    - Albany Hermes 32	
-    - Vapid Hotknife 1	
-    - Vapid Hustler 32	
-    - Albany Lurcher 19
-    - Declasse Moonbeam 18	
-    - Declasse Moonbeam personalizada 18	
-    - Imponte Nightshade 20	
-    - Imponte Phoenix
-    - Cheval Picador	
-    - Vapid Pisswasser Dominator 13	
-    - Bravado Rat-Loader	
-    - Bravado Rat-Truck 14
-    - Bravado Redwood Gauntlet 13	
-    - Imponte Ruiner	
-    - Imponte Ruiner 2000 28	
-    - Declasse Sabre Turbo
-    - Declasse Sabre Turbo personalizado 24	
-    - Vapid Slamvan 14	
-    - Vapid Slamvan personalizada 24	
-    - Declasse Stallion 13
-    - Declasse Tampa 21	
-    - Declasse Tampa armado 30	
-    - Declasse Vigero	
-    - Albany Virgo 16
-    - Albany Virgo clásico 24	
-    - Albany Virgo clásico personalizado 24	
-    - Declasse Voodoo	
-    - Declasse Voodoo personalizado 18
-    - Declasse Yosemite 32
+    Vapid-Blade
+    Albany-Buccaneer
+    Albany-Buccaneer-personalizado
+    Declasse-Burger-Shot-Stallion
+    Vapid-Chino
+    Vapid-Chino-personalizado
+    Invetero-Coquette-BlackFin
+    Vapid-Dominator
+    Vapid-Dominator-GTX
+    Imponte-Duke-O'Death
+    Imponte-Dukes
+    Vapid-Ellie
+    Willard-Faction
+    Willard-Faction-Donk-personalizado
+    Willard-Faction-personalizado
+    Bravado-Gauntlet
+    Albany-Hermes
+    Vapid-Hotknife
+    Vapid-Hustler
+    Albany-Lurcher
+    Declasse-Moonbeam
+    Declasse-Moonbeam-personalizada
+    Imponte-Nightshade
+    Imponte-Phoenix
+    Cheval-Picador
+    Vapid-Pisswasser Dominator
+    Bravado-Rat-Loader
+    Bravado-Rat-Truck
+    Bravado-Redwood Gauntlet
+    Imponte-Ruiner
+    Imponte-Ruiner 00
+    Declasse-Sabre Turbo
+    Declasse-Sabre Turbo personalizado
+    Vapid Slamvan
+    Vapid Slamvan personalizada
+    Declasse Stallion
+    Declasse Tampa
+    Declasse Tampa armado
+    Declasse Vigero
+    Albany Virgo
+    Albany Virgo clásico
+    Albany Virgo clásico personalizado
+    Declasse Voodoo
+    Declasse Voodoo personalizado
+    Declasse Yosemite
 
 Cupés (14):
-    - Enus Cognoscenti Cabrio	
-    - Dewbauchee Exemplar	
-    - Ocelot F620	
-    - Lampadati Felon
-    - Lampadati Felon GT	
-    - Ocelot Jackal	
-    - Ubermacht Oracle	
-    - Ubermacht Oracle XS
-    - Ubermacht Sentinel	
-    - Ubermacht Sentinel XS	
-    - Enus Windsor 16	
-    - Enus Windsor Drop 25
-    - Ubermacht Zion	
-    - Ubermacht Zion Cabrio
+    Enus Cognoscenti Cabrio
+    Dewbauchee Exemplar
+    Ocelot F6
+    Lampadati Felon
+    Lampadati Felon GT
+    Ocelot Jackal
+    Ubermacht Oracle
+    Ubermacht Oracle XS
+    Ubermacht Sentinel
+    Ubermacht Sentinel XS
+    Enus Windsor
+    Enus Windsor Drop
+    Ubermacht Zion
+    Ubermacht Zion Cabrio
 
 Deportivos (59):
-    - Obey 9F	
-    - Obey 9F Cabrio	
-    - Albany Alpha 7	
-    - Bravado Banshee
-    - Bravado Banshee sin toldo 8	
-    - Grotti Bestia GTS 25	
-    - Dinka Blista Compact 13	
-    - Bravado Buffalo
-    - Bravado Buffalo S	
-    - Bravado Buffalo S (II)	
-    - Grotti Carbonizzare	
-    - Pfister Comet
-    - Pfister Comet Retro personalizado 28	
-    - Pfister Comet Safari 32	
-    - Pfister Comet SR 32	
-    - Invetero Coquette
-    - Invetero Coquette sin toldo	
-    - Declasse Drift Tampa 26	
-    - Annis Elegy Retro personalizado 28	
-    - Annis Elegy RH8 2
-    - Benefactor Feltzer	
-    - Vapid Flash GT 33	
-    - Lampadati Furore GT 12	
-    - Schyster Fusilade
-    - Karin Futo	
-    - Vapid GB200 33	
-    - Dinka Go Go Monkey Blista Compact 13	
-    - Declasse Hotring Sabre 33
-    - Dinka Jester 7	
-    - Dinka Jester (de carreras) 14	
-    - Hijak Khamelion 1	
-    - Karin Kuruma 15
-    - Karin Kuruma (armadura) 15	
-    - Ocelot Lynx 26	
-    - Dewbauchee Massacro 8	
-    - Dewbauchee Massacro (de carreras) 14
-    - Pfister Neon 32	
-    - Obey Omnis 26	
-    - Ocelot Pariah 32	
-    - Maibatsu Penumbra
-    - Coil Raiden 32	
-    - Dewbauchee Rapid GT	
-    - Dewbauchee Rapid GT convertible	
-    - BF Raptor 27
-    - Ubermacht Revolter 32	
-    - Hijak Ruston 29	
-    - Benefactor Schafter LWB 20	
-    - Benefactor Schafter V12 20
-    - Benefactor Schwartzer	
-    - Ubermacht Sentinel clásico 32	
-    - Dewbauchee Seven-70 25	
-    - Dewbauchee Specter 28
-    - Dewbauchee Specter personalizado 28	
-    - Bravado Sprunk Buffalo 13	
-    - Benefactor Streiter 32	
-    - Karin Sultan
-    - Benefactor Surano convertible	
-    - Lampadati Tropos Rallye 26	
-    - Bravado Verlierer 20
+    Obey 9F
+    Obey 9F Cabrio
+    Albany Alpha
+    Bravado Banshee
+    Bravado Banshee sin toldo
+    Grotti Bestia GTS
+    Dinka Blista Compact
+    Bravado Buffalo
+    Bravado Buffalo S
+    Bravado Buffalo S (II)
+    Grotti Carbonizzare
+    Pfister Comet
+    Pfister Comet Retro personalizado
+    Pfister Comet Safari
+    Pfister Comet SR
+    Invetero Coquette
+    Invetero Coquette sin toldo
+    Declasse Drift Tampa
+    Annis Elegy Retro personalizado
+    Annis Elegy RH8
+    Benefactor Feltzer
+    Vapid Flash GT
+    Lampadati Furore GT
+    Schyster Fusilade
+    Karin Futo
+    Vapid GB0
+    Dinka Go Go Monkey Blista Compact
+    Declasse Hotring Sabre
+    Dinka Jester
+    Dinka Jester (de carreras)
+    Hijak Khamelion
+    Karin Kuruma
+    Karin Kuruma (armadura)
+    Ocelot Lynx
+    Dewbauchee Massacro
+    Dewbauchee Massacro (de carreras)
+    Pfister Neon
+    Obey Omnis
+    Ocelot Pariah
+    Maibatsu Penumbra
+    Coil Raiden
+    Dewbauchee Rapid GT
+    Dewbauchee Rapid GT convertible
+    BF Raptor
+    Ubermacht Revolter
+    Hijak Ruston
+    Benefactor Schafter LWB
+    Benefactor Schafter V12
+    Benefactor Schwartzer
+    Ubermacht Sentinel clásico
+    Dewbauchee Seven-70
+    Dewbauchee Specter
+    Dewbauchee Specter personalizado
+    Bravado Sprunk Buffalo
+    Benefactor Streiter
+    Karin Sultan
+    Benefactor Surano convertible
+    Lampadati Tropos Rallye
+    Bravado Verlierer
 
 Deportivos clásicos (39):
-    - Karin 190z 32	
-    - Ocelot Ardent 30	
-    - Lampadati Casco 15	
-    - Rune Cheburek 33
-    - Grotti Cheetah clásico 30	
-    - Invetero Coquette clásico 11	
-    - Invetero Coquette clásico (II) 11	
-    - Imponte Deluxo 32
-    - Vulcar Fagaloa 33	
-    - Albany Fränken Stange 19	
-    - Grotti GT500 32	
-    - Pegassi Infernus clásico 29
-    - Dewbauchee JB 700	
-    - Declasse Mamba 20	
-    - Albany Mañana	
-    - Lampadati Michelli GT 33
-    - Pegassi Monroe	
-    - Vapid Peyote	
-    - Lampadati Pigalle 9	
-    - Dewbauchee Rapid GT clásico 31
-    - Vapid Retinue 31	
-    - Albany Roosevelt 6	
-    - Albany Roosevelt Valor 23	
-    - Annis Savestra 32
-    - Grotti Stinger	
-    - Grotti Stinger GT	
-    - Grotti Stinger sin toldo	
-    - Benefactor Stirling GT 16
-    - Ocelot Stromberg 32	
-    - Pegassi Torero 30	
-    - Declasse Tornado	
-    - Declasse Tornado (II)
-    - Declasse Tornado (III)	
-    - Declasse Tornado (IV)	
-    - Declasse Tornado desgastado 27	
-    - Declasse Tornado personalizado 24
-    - Grotti Turismo clásico 29	
-    - Lampadati Viseris 32	
-    - Truffade Z-Type
+    Karin 190z
+    Ocelot Ardent
+    Lampadati Casco
+    Rune Cheburek
+    Grotti Cheetah clásico
+    Invetero Coquette clásico
+    Invetero Coquette clásico (II)
+    Imponte Deluxo
+    Vulcar Fagaloa
+    Albany Fränken Stange
+    Grotti GT500
+    Pegassi Infernus clásico
+    Dewbauchee JB 700
+    Declasse Mamba
+    Albany Mañana
+    Lampadati Michelli GT
+    Pegassi Monroe
+    Vapid Peyote
+    Lampadati Pigalle
+    Dewbauchee Rapid GT clásico
+    Vapid Retinue
+    Albany Roosevelt
+    Albany Roosevelt Valor
+    Annis Savestra
+    Grotti Stinger
+    Grotti Stinger GT
+    Grotti Stinger sin toldo
+    Benefactor Stirling GT
+    Ocelot Stromberg
+    Pegassi Torero
+    Declasse Tornado
+    Declasse Tornado (II)
+    Declasse Tornado (III)
+    Declasse Tornado (IV)
+    Declasse Tornado desgastado
+    Declasse Tornado personalizado
+    Grotti Turismo clásico
+    Lampadati Viseris
+    Truffade Z-Type
 
 Súper (40):
-    - Pfister 811 25	
-    - Truffade Adder	
-    - Overflod Autarch 32	
-    - Bravado Banshee 900R 22
-    - Vapid Bullet	
-    - Grotti Cheetah	
-    - Coil Cyclone 31	
-    - Overflod Entity XF
-    - Overflod Entity XXR 33	
-    - Emperor ETR1 26	
-    - Vapid FMJ 25	
-    - Progen GP1 29
-    - Pegassi Infernus	
-    - Progen Itali GTB 28	
-    - Progen Itali GTB personalizado 28	
-    - Truffade Nero 28
-    - Truffade Nero personalizado 28	
-    - Pegassi Osiris 16	
-    - Ocelot Penetrator 28	
-    - Annis RE-7B 26
-    - Pegassi Reaper 25	
-    - Coil Rocket Voltic 28	
-    - Ubermacht SC1 32	
-    - Karin Sultan RS 22
-    - Progen T20 17	
-    - Cheval Taipan 33	
-    - Pegassi Tempesta 28	
-    - Pegassi Tezeract 33
-    - Grotti Turismo R 7	
-    - Overflod Tyrant 33	
-    - Progen Tyrus 26	
-    - Pegassi Vacca
-    - Dewbauchee Vagner 30	
-    - Grotti Vigilante 31	
-    - Grotti Visione 31	
-    - Coil Voltic
-    - Coil Voltic sin toldo 8	
-    - Grotti X80 Proto 25	
-    - Ocelot XA-21 30	
-    - Pegassi Zentorno 8
+    Pfister 811
+    Truffade Adder
+    Overflod Autarch
+    Bravado Banshee 900R
+    Vapid Bullet
+    Grotti Cheetah
+    Coil Cyclone
+    Overflod Entity XF
+    Overflod Entity XXR
+    Emperor ETR1
+    Vapid FMJ
+    Progen GP1
+    Pegassi Infernus
+    Progen Itali GTB
+    Progen Itali GTB personalizado
+    Truffade Nero
+    Truffade Nero personalizado
+    Pegassi Osiris
+    Ocelot Penetrator
+    Annis RE-7B
+    Pegassi Reaper
+    Coil Rocket Voltic
+    Ubermacht SC1
+    Karin Sultan RS
+    Progen T
+    Cheval Taipan
+    Pegassi Tempesta
+    Pegassi Tezeract
+    Grotti Turismo R
+    Overflod Tyrant
+    Progen Tyrus
+    Pegassi Vacca
+    Dewbauchee Vagner
+    Grotti Vigilante
+    Grotti Visione
+    Coil Voltic
+    Coil Voltic sin toldo
+    Grotti X80 Proto
+    Ocelot XA-21
+    Pegassi Zentorno
 
 Camionetas (31):
-    - Bravado Bison	
-    - Bravado Bison (II)	
-    - Bravado Bison (III)	
-    - Vapid Bobcat XL
-    - Boxville	 
-    - Boxville (II)	 
-    - Boxville (III)	 
-    - Boxville (IV) 15 
-    - Brute Boxville blindado 28	
-    - Declasse Burrito	
-    - Declasse Burrito (II)	
-    - Declasse Burrito (III)
-    - Declasse Burrito (IV)	
-    - Camioneta de tacos	
-    - Brute Camper	
-    - Declasse Gang Burrito
-    - Declasse Gang Burrito (II)	
-    - Zirconium Journey	
-    - Vapid Minivan	
-    - Vapid Minivan personalizado 24
-    - Bravado Paradise 3	
-    - Brute Pony	
-    - Brute Pony (II)	
-    - Bravado Rumpo
-    - Bravado Rumpo (II)	
-    - Bravado Rumpo personalizada 25	
-    - Vapid Speedo	
-    - BF Surfer
-    - BF Surfer (II)	
-    - Bravado Youga	
-    - Bravado Youga Classic 27
+    Bravado Bison
+    Bravado Bison (II)
+    Bravado Bison (III)
+    Vapid Bobcat XL
+    Boxville
+    Boxville (II)
+    Boxville (III)
+    Boxville (IV)
+    Brute Boxville blindado
+    Declasse Burrito
+    Declasse Burrito (II)
+    Declasse Burrito (III)
+    Declasse Burrito (IV)
+    Camioneta de tacos
+    Brute Camper
+    Declasse Gang Burrito
+    Declasse Gang Burrito (II)
+    Zirconium Journey
+    Vapid Minivan
+    Vapid Minivan personalizado
+    Bravado Paradise
+    Brute Pony
+    Brute Pony (II)
+    Bravado Rumpo
+    Bravado Rumpo (II)
+    Bravado Rumpo personalizada
+    Vapid Speedo
+    BF Surfer
+    BF Surfer (II)
+    Bravado Youga
+    Bravado Youga Classic
 
 Todocaminos (26):
-    - Gallivanter Baller	
-    - Gallivanter Baller (II)	
-    - Gallivanter Baller LE 20	
-    - Gallivanter Baller LE (blindado) 20
-    - Gallivanter Baller LE LWB 20	
-    - Gallivanter Baller LE LWB (blindado) 20	
-    - Karin BeeJay XL	
-    - Albany Cavalcade
-    - Albany Cavalcade (II)	
-    - Vapid Contender 26	
-    - Benefactor Dubsta	
-    - Benefactor Dubsta (II)
-    - Fathom FQ 2	
-    - Declasse Granger	
-    - Bravado Gresley	
-    - Emperor Habanero
-    - Enus Huntley S 8	
-    - Dundreary Landstalker	
-    - Canis Mesa	
-    - Mammoth Patriot
-    - Vapid Radius	
-    - Obey Rocoto	
-    - Canis Seminole	
-    - Benefactor Serrano
-    - Benefactor XLS 25	
-    - Benefactor XLS (blindado) 25
+    Gallivanter Baller
+    Gallivanter Baller (II)
+    Gallivanter Baller LE
+    Gallivanter Baller LE (blindado)
+    Gallivanter Baller LE LWB
+    Gallivanter Baller LE LWB (blindado) 
+    Karin BeeJay XL
+    Albany Cavalcade
+    Albany Cavalcade (II)
+    Vapid Contender
+    Benefactor Dubsta
+    Benefactor Dubsta (II)
+    Fathom FQ 2
+    Declasse Granger
+    Bravado Gresley
+    Emperor Habanero
+    Enus Huntley S
+    Dundreary Landstalker
+    Canis Mesa
+    Mammoth Patriot
+    Vapid Radius
+    Obey Rocoto
+    Canis Seminole
+    Benefactor Serrano
+    Benefactor XLS
+    Benefactor XLS (blindado)
 
 Todoterrenos (39):
-    - BF Bifta 3	
-    - Nagasaki Blazer	
-    - Nagasaki Blazer Aqua 28	
-    - Nagasaki Blazer Lifeguard
-    - Canis Bodhi	
-    - Coil Brawler 17	
-    - HVY Camioneta Insurgent 15	
-    - Vapid Caracara 33
-    - Vapid Desert Raid 26	
-    - Dubsta 6x6 Dubsta 6x6 9	
-    - BF Dune Buggy	
-    - BF Dune FAV 30
-    - Bravado Duneloader	
-    - Nagasaki Hot Rod Blazer	
-    - BF Injection	
-    - HVY Insurgent (cubierto) 15
-    - HVY Insurgent personalizada 30	
-    - Canis Kalahari 3	
-    - Canis Kalahari sin toldo 12	
-    - Canis Kamacho 32
-    - Cheval Marshall 13	
-    - Canis Mesa (II) 5	
-    - Canis Mesa (III)	
-    - HVY Nightshark 30
-    - BF Ramp Buggy 28	
-    - Declasse Rancher XL	
-    - Declasse Rancher XL (II)	
-    - Karin Rebel 5
-    - Karin Rebel (limpio)	
-    - Vapid Riata 32	
-    - Vapid Sandking SWB	
-    - Vapid Sandking XL
-    - Space Docker	
-    - Nagasaki Street Blazer 27	
-    - Karin Technical 15	
-    - Karin Technical Aqua 28
-    - Karin Technical personalizada 30	
-    - The Liberator 10	
-    - Vapid Trophy Truck 26
+    BF Bifta
+    Nagasaki Blazer
+    Nagasaki Blazer Aqua
+    Nagasaki Blazer Lifeguard
+    Canis Bodhi
+    Coil Brawler
+    HVY Camioneta Insurgent
+    Vapid Caracara
+    Vapid Desert Raid
+    Dubsta 6x6 Dubsta 6x6
+    BF Dune Buggy
+    BF Dune FAV
+    Bravado Duneloader
+    Nagasaki Hot Rod Blazer
+    BF Injection
+    HVY Insurgent (cubierto)
+    HVY Insurgent personalizada
+    Canis Kalahari
+    Canis Kalahari sin toldo
+    Canis Kamacho
+    Cheval Marshall
+    Canis Mesa (II)
+    Canis Mesa (III)
+    HVY Nightshark
+    BF Ramp Buggy
+    Declasse Rancher XL
+    Declasse Rancher XL (II)
+    Karin Rebel
+    Karin Rebel (limpio)
+    Vapid Riata
+    Vapid Sandking SWB
+    Vapid Sandking XL
+    Space Docker
+    Nagasaki Street Blazer
+    Karin Technical
+    Karin Technical Aqua
+    Karin Technical personalizada
+    The Liberator
+    Vapid Trophy Truck
 
 Comerciales (13):
-    - Vapid Benson	
-    - HVY Biff	
-    - JoBuilt Hauler	
-    - JoBuilt Hauler personalizado 30
-    - Maibatsu Mule	
-    - Maibatsu Mule (II)	
-    - Maibatsu Mule (III) 15	
-    - MTL Packer
-    - JoBuilt Phantom	
-    - JoBuilt Phantom personalizado 30	
-    - JoBuilt Phantom Wedge 28	
-    - MTL Pounder
-    - Brute Stockade
+    Vapid Benson
+    HVY Biff
+    JoBuilt Hauler
+    JoBuilt Hauler personalizado
+    Maibatsu Mule
+    Maibatsu Mule (II)
+    Maibatsu Mule (III)
+    MTL Packer
+    JoBuilt Phantom
+    JoBuilt Phantom personalizado
+    JoBuilt Phantom Wedge
+    MTL Pounder
+    Brute Stockade
 
 Industriales (11):
-    - HVY Dozer	
-    - HVY Dump	
-    - MTL Flatbed	
-    - Vapid Guardian 15
-    - Manipulador telescópico	
-    - HVY Mezcladora	
-    - HVY Mezcladora (II)	
-    - JoBuilt Rubble
-    - Brute Tipper	
-    - Brute Tipper (II)	
-    - HVY Tuneladora
+    HVY Dozer
+    HVY Dump
+    MTL Flatbed
+    Vapid Guardian
+    Manipulador telescópico
+    HVY Mezcladora
+    HVY Mezcladora (II)
+    JoBuilt Rubble
+    Brute Tipper
+    Brute Tipper (II)
+    HVY Tuneladora
 
 Servicio (10):
-    - Autobús	
-    - Autobús del aeropuerto	
-    - Autobús rentable	
-    - Autobús turístico
-    - HVY Brickade 25	
-    - Dashound	
-    - MTL Dune 26	
-    - Taxi
-    - Trashmaster	
-    - MTL Wastelander 28
+    Autobús
+    Autobús del aeropuerto
+    Autobús rentable
+    Autobús turístico
+    HVY Brickade
+    Dashound
+    MTL Dune
+    Taxi
+    Trashmaster
+    MTL Wastelander
 
 Emergencias (17):
-    - Ambulancia	
-    - Antidisturbios 32	
-    - Antidisturbios de la policía	
-    - Autobús de reclusos
-    - Camión de bomberos	
-    - Camioneta del sheriff	
-    - FIB	
-    - FIB (II)
-    - Guardia forestal	
-    - Moto de la policía
-    - Patrulla de incógnito	
-    - Patrulla de la policía
-    - Patrulla de la policía (II)	
-    - Patrulla de la policía (III)	
-    - Patrulla del sheriff	
-    - Salvavidas
-    - Transporte de la policía
+    Ambulancia
+    Antidisturbios
+    Antidisturbios de la policía
+    Autobús de reclusos
+    Camión de bomberos
+    Camioneta del sheriff
+    FIB
+    FIB (II)
+    Guardia forestal
+    Moto de la policía
+    Patrulla de incógnito
+    Patrulla de la policía
+    Patrulla de la policía (II)
+    Patrulla de la policía (III)
+    Patrulla del sheriff
+    Salvavidas
+    Transporte de la policía
 
 Militares (11):
-    - HVY APC 30	
-    - HVY Barracks	
-    - HVY Barracks (II)	
-    - Barrage 32
-    - Chernobog 32	
-    - Canis Crusader	
-    - Vom Feuer Remolque antiaéreo 30	
-    - Bravado Semioruga 30
-    - Tanque Rhino	
-    - Mammoth Thruster 32	
-    - TM-02 Khanjali 32
+    HVY APC
+    HVY Barracks
+    HVY Barracks (II)
+    Barrage
+    Chernobog
+    Canis Crusader
+    Vom Feuer Remolque antiaéreo
+    Bravado Semioruga
+    Tanque Rhino
+    Mammoth Thruster
+    TM-02 Khanjali
 
 Bicis (7):
-    - BMX	
-    - Cruiser	
-    - Endurex	
-    - Fixter
-    - Scorcher	
-    - Tri-Cycles	
-    - Whippet
+    BMX
+    Cruiser
+    Endurex
+    Fixter
+    Scorcher
+    Tri-Cycles
+    Whippet
 
 Motos (47):
-    - Dinka Akuma	
-    - LCC Avarus 27	
-    - Western Bagger	
-    - Pegassi Bati 801
-    - Pegassi Bati 801RR	
-    - Nagasaki BF400 26	
-    - Nagasaki Carbon RS 1	
-    - Nagasaki Chimera 27
-    - Western Cliffhanger 26	
-    - Western Daemon	
-    - Western Daemon personalizada 27	
-    - Shitzu Defiler 27
-    - Principe Diabolus 28	
-    - Principe Diabolus personalizada 28	
-    - Dinka Double-T	
-    - Dinka Enduro 15
-    - Pegassi Esskey 27	
-    - Pegassi Faggio	
-    - Pegassi Faggio Mod 27	
-    - Pegassi Faggio Sport 27
-    - Pegassi FCR 1000 28	
-    - Pegassi FCR 1000 personalizada 28	
-    - Western Gargoyle 26	
-    - Shitzu Hakuchou 12
-    - Shitzu Hakuchou Drag 27	
-    - LCC Hexer	
-    - LCC Innovation 12	
-    - Principe Lectro 15
-    - Maibatsu Manchez 27	
-    - Western Moto desgastada 27	
-    - Principe Nemesis	
-    - Western Nightblade 27
-    - Pegassi Oppressor 30	
-    - Shitzu PCJ 600	
-    - Pegassi Ruffian	
-    - Maibatsu Sánchez
-    - Maibatsu Sánchez (tapicería)	
-    - LCC Sanctus 27	
-    - Nagasaki Shotaro 27	
-    - Western Sovereign 10
-    - Dinka Thrust 8	
-    - Shitzu Vader	
-    - Dinka Vindicator 17	
-    - Pegassi Vortex 27
-    - Western Wolfsbane 27	
-    - Western Zombie Bobber 27	
-    - Western Zombie Chopper 27
+    Dinka Akuma
+    LCC Avarus
+    Western Bagger
+    Pegassi Bati 801
+    Pegassi Bati 801RR
+    Nagasaki BF400
+    Nagasaki Carbon RS
+    Nagasaki Chimera
+    Western Cliffhanger
+    Western Daemon
+    Western Daemon personalizada
+    Shitzu Defiler
+    Principe Diabolus
+    Principe Diabolus personalizada
+    Dinka Double-T
+    Dinka Enduro
+    Pegassi Esskey
+    Pegassi Faggio
+    Pegassi Faggio Mod
+    Pegassi Faggio Sport
+    Pegassi FCR 1000
+    Pegassi FCR 1000 personalizada
+    Western Gargoyle
+    Shitzu Hakuchou
+    Shitzu Hakuchou Drag
+    LCC Hexer
+    LCC Innovation
+    Principe Lectro
+    Maibatsu Manchez
+    Western Moto desgastada
+    Principe Nemesis
+    Western Nightblade
+    Pegassi Oppressor
+    Shitzu PCJ 600
+    Pegassi Ruffian
+    Maibatsu Sánchez
+    Maibatsu Sánchez (tapicería)
+    LCC Sanctus
+    Nagasaki Shotaro
+    Western Sovereign
+    Dinka Thrust
+    Shitzu Vader
+    Dinka Vindicator
+    Pegassi Vortex
+    Western Wolfsbane
+    Western Zombie Bobber
+    Western Zombie Chopper
 
 Helicópteros (22):
-    - Akula 32	
-    - Western Annihilator	
-    - Nagasaki Buzzard	
-    - Western Cargobob
-    - Western Cargobob (II)	
-    - Western Cargobob Jetsam	
-    - FH-1 Hunter 31	
-    - Maibatsu Frogger
-    - Maibatsu Frogger (II)	
-    - Nagasaki Havok 31	
-    - Nagasaki Helicóptero de ataque Buzzard	
-    - Buckingham Maverick
-    - Buckingham Maverick de la policía	
-    - Savage 15	
-    - Sea Sparrow 33	
-    - Skylift
-    - Buckingham Super Volito 20	
-    - Buckingham Super Volito carbono 20	
-    - Buckingham Swift 11	
-    - Buckingham Swift Deluxe 16
-    - Buckingham Valkyrie 15	
-    - Buckingham Volatus 25
+    Akula
+    Western Annihilator
+    Nagasaki Buzzard
+    Western Cargobob
+    Western Cargobob (II)
+    Western Cargobob Jetsam
+    FH-1 Hunter
+    Maibatsu Frogger
+    Maibatsu Frogger (II)
+    Nagasaki Havok
+    Nagasaki Helicóptero de ataque Buzzard
+    Buckingham Maverick
+    Buckingham Maverick de la policía
+    Savage
+    Sea Sparrow
+    Skylift
+    Buckingham Super Volito
+    Buckingham Super Volito carbono
+    Buckingham Swift
+    Buckingham Swift Deluxe
+    Buckingham Valkyrie
+    Buckingham Volatus
 
 Aviones (35):
-    - Alpha-Z1 31	
-    - Mammoth Avenger 32	
-    - Avión de carga 5	
-    - Western Avioneta fumigadora
-    - Western Besra 11	
-    - Bombushka 31	
-    - Western Cuban 800	
-    - Dirigible de Atomic 4
-    - Dirigible de Xero 13	
-    - Mammoth Dodo 13	
-    - Howard NX-25 31	
-    - Mammoth Hydra 15
-    - Jet	
-    - Buckingham Luxor	
-    - Buckingham Luxor Deluxe 16	
-    - Western Mallard
-    - JoBuilt Mammatus	
-    - Buckingham Miljet 11	
-    - Mogul 31	
-    - Buckingham Nimbus 25
-    - P-45 Nokota 31	
-    - JoBuilt P-996 LAZER	
-    - Pyro 31	
-    - Rogue 31
-    - Western Seabreeze 31	
-    - Buckingham Shamal	
-    - Starling 31	
-    - Titán
-    - Tula 31	
-    - Pegassi Ultraligero 31	
-    - V-65 Molotok 31	
-    - JoBuilt Velum
-    - JoBuilt Velum (5 asientos) 15	
-    - Buckingham Vestra 7	
-    - Volatol 32
+    Alpha-Z1
+    Mammoth Avenger
+    Avión de carga
+    Western Avioneta fumigadora
+    Western Besra
+    Bombushka
+    Western Cuban 800
+    Dirigible de Atomic
+    Dirigible de Xero
+    Mammoth Dodo
+    Howard NX-25
+    Mammoth Hydra
+    Jet
+    Buckingham Luxor
+    Buckingham Luxor Deluxe
+    Western Mallard
+    JoBuilt Mammatus
+    Buckingham Miljet
+    Mogul
+    Buckingham Nimbus
+    P-45 Nokota
+    JoBuilt P-996 LAZER
+    Pyro
+    Rogue
+    Western Seabreeze
+    Buckingham Shamal
+    Starling
+    Titán
+    Tula
+    Pegassi Ultraligero
+    V-65 Molotok
+    JoBuilt Velum
+    JoBuilt Velum (5 asientos)
+    Buckingham Vestra
+    Volatol
 
 Barcos (16):
-    - Nagasaki Dinghy	
-    - Nagasaki Dinghy (II)	
-    - Nagasaki Dinghy (III) 15	
-    - Shitzu Jetmax
-    - Kraken 13	
-    - Dinka Marquis	
-    - Minisubmarino	
-    - Predator de la policía
-    - Remolcador 25	
-    - Speedophile Seashark	
-    - Speedophile Seashark (II)	
-    - Pegassi Speeder 3
-    - Shitzu Squalo	
-    - Shitzu Suntrap	
-    - Lampadati Toro 17	
-    - Shitzu Tropic
+    Nagasaki Dinghy
+    Nagasaki Dinghy (II)
+    Nagasaki Dinghy (III)
+    Shitzu Jetmax
+    Kraken
+    Dinka Marquis
+    Minisubmarino
+    Predator de la policía
+    Remolcador
+    Speedophile Seashark
+    Speedophile Seashark (II)
+    Pegassi Speeder
+    Shitzu Squalo
+    Shitzu Suntrap
+    Lampadati Toro
+    Shitzu Tropic
 
 Especializados (17):
-    - Airtug	
-    - Caddy	
-    - Caddy (II)	
-    - Caddy (III) 30
-    - Camión de chatarra	
-    - Docktug	
-    - Stanley Fieldmaster	
-    - Grúa
-    - Grúa (II)	
-    - HVY Montacargas	
-    - Podadora	
-    - Ripley
-    - Vapid Sadler	
-    - Tractor	
-    - Vehículo utilitario	
-    - Vehículo utilitario (II)
-    - Vehículo utilitario (III)
+    Airtug
+    Caddy
+    Caddy (II)
+    Caddy (III)
+    Camión de chatarra
+    Docktug
+    Stanley Fieldmaster
+    Grúa
+    Grúa (II)
+    HVY Montacargas
+    Podadora
+    Ripley
+    Vapid Sadler
+    Tractor
+    Vehículo utilitario
+    Vehículo utilitario (II)
+    Vehículo utilitario (III)

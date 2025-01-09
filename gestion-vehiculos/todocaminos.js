@@ -11,22 +11,22 @@ const todocaminos = [
       compra: "#"
     },
     {
-      nombre: "Gallivanter Baller LE 20",
+      nombre: "Gallivanter Baller LE",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Gallivanter Baller LE (blindado) 20",
+      nombre: "Gallivanter Baller LE (blindado)",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Gallivanter Baller LE LWB 20",
+      nombre: "Gallivanter Baller LE LWB",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Gallivanter Baller LE LWB (blindado) 20",
+      nombre: "Gallivanter Baller LE LWB (blindado)",
       foto: "#",
       compra: "#"
     },
@@ -46,7 +46,7 @@ const todocaminos = [
       compra: "#"
     },
     {
-      nombre: "Vapid Contender 26",
+      nombre: "Vapid Contender",
       foto: "#",
       compra: "#"
     },
@@ -61,7 +61,7 @@ const todocaminos = [
       compra: "#"
     },
     {
-      nombre: "Fathom FQ 2",
+      nombre: "Fathom FQ",
       foto: "#",
       compra: "#"
     },
@@ -81,7 +81,7 @@ const todocaminos = [
       compra: "#"
     },
     {
-      nombre: "Enus Huntley S 8",
+      nombre: "Enus Huntley S",
       foto: "#",
       compra: "#"
     },
@@ -121,12 +121,12 @@ const todocaminos = [
       compra: "#"
     },
     {
-      nombre: "Benefactor XLS 25",
+      nombre: "Benefactor XLS",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Benefactor XLS (blindado) 25",
+      nombre: "Benefactor XLS (blindado)",
       foto: "#",
       compra: "#"
     }

@@ -2,73 +2,73 @@
 const cupes = [
     {
       nombre: "Enus Cognoscenti Cabrio",
-      foto: "#", // Poner el enlace de la imagen cuando esté disponible
-      compra: "#" // Poner el enlace de compra cuando esté disponible
+      foto: "img-coches/cupes/enus-cognoscenti-cabrio.png", 
+      compra: "" 
     },
     {
       nombre: "Dewbauchee Exemplar",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/Dewbauchee-Exemplar.png",
+      compra: ""
     },
     {
       nombre: "Ocelot F620",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ocelot-f620.png",
+      compra: ""
     },
     {
       nombre: "Lampadati Felon",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/lampadati-felon.png",
+      compra: ""
     },
     {
       nombre: "Lampadati Felon GT",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/lampadati-felon-gt.png",
+      compra: ""
     },
     {
       nombre: "Ocelot Jackal",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ocelot-jackal.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Oracle",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-oracle.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Oracle XS",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-oracle-xs.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Sentinel",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-sentinel.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Sentinel XS",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-sentinel-xs.png",
+      compra: ""
     },
     {
-      nombre: "Enus Windsor 16",
-      foto: "#",
-      compra: "#"
+      nombre: "Enus Windsor",
+      foto: "img-coches/cupes/enus-windsor.png",
+      compra: ""
     },
     {
-      nombre: "Enus Windsor Drop 25",
-      foto: "#",
-      compra: "#"
+      nombre: "Enus Windsor Drop",
+      foto: "img-coches/cupes/enus-windsor-drop.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Zion",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-zion.png",
+      compra: ""
     },
     {
       nombre: "Ubermacht Zion Cabrio",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/cupes/ubermacht-zion-cabrio.png",
+      compra: ""
     }
   ];
   

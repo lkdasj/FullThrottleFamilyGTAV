@@ -2,48 +2,48 @@
 const compactos = [
     {
       nombre: "Dinka Blista",
-      foto: "#", // Poner el enlace de la imagen cuando esté disponible
-      compra: "#" // Poner el enlace de compra cuando esté disponible
+      foto: "img-coches/compactos/Dinka-Blista.png", // Poner el enlace de la imagen cuando esté disponible
+      compra: "" // Poner el enlace de compra cuando esté disponible
     },
     {
-      nombre: "Grotti Brioso R/A 26",
-      foto: "#",
-      compra: "#"
+      nombre: "Grotti Brioso R/A",
+      foto: "img-coches/compactos/Grotti-Brioso-R-A.png",
+      compra: ""
     },
     {
       nombre: "Karin Dilettante",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/compactos/Karin-Dilettante.png",
+      compra: ""
     },
     {
       nombre: "Karin Dilettante (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/compactos/Karin-Dilettante2.png",
+      compra: ""
     },
     {
       nombre: "Weeny Issi",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/compactos/Weeny-Issi.png",
+      compra: ""
     },
     {
-      nombre: "Weeny Issi clásico 33",
-      foto: "#",
-      compra: "#"
+      nombre: "Weeny Issi clásico",
+      foto: "img-coches/compactos/WeenyIssi-clásico.png",
+      compra: ""
     },
     {
-      nombre: "Benefactor Panto 9",
-      foto: "#",
-      compra: "#"
+      nombre: "Benefactor Panto",
+      foto: "img-coches/compactos/Benefactor-Panto.png",
+      compra: ""
     },
     {
       nombre: "Bollokan Prairie",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/compactos/Bollokan-Prairie.png",
+      compra: ""
     },
     {
-      nombre: "Declasse Rhapsody 9",
-      foto: "#",
-      compra: "#"
+      nombre: "Declasse Rhapsody",
+      foto: "img-coches/compactos/Declasse-Rhapsody.png",
+      compra: ""
     }
   ];
   

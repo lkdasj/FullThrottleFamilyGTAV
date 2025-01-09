@@ -1,7 +1,7 @@
 // Base de datos de vehículos Súper
 const superVehiculos = [
     {
-      nombre: "Pfister 811 25",
+      nombre: "Pfister 811",
       foto: "#", // Poner el enlace de la imagen cuando esté disponible
       compra: "#" // Poner el enlace de compra cuando esté disponible
     },
@@ -11,12 +11,12 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Overflod Autarch 32",
+      nombre: "Overflod Autarch",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Bravado Banshee 900R 22",
+      nombre: "Bravado Banshee 900R",
       foto: "#",
       compra: "#"
     },
@@ -31,7 +31,7 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Coil Cyclone 31",
+      nombre: "Coil Cyclone",
       foto: "#",
       compra: "#"
     },
@@ -41,22 +41,22 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Overflod Entity XXR 33",
+      nombre: "Overflod Entity XXR",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Emperor ETR1 26",
+      nombre: "Emperor ETR1",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Vapid FMJ 25",
+      nombre: "Vapid FMJ",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Progen GP1 29",
+      nombre: "Progen GP1",
       foto: "#",
       compra: "#"
     },
@@ -66,92 +66,92 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Progen Itali GTB 28",
+      nombre: "Progen Itali GTB",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Progen Itali GTB personalizado 28",
+      nombre: "Progen Itali GTB personalizado",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Truffade Nero 28",
+      nombre: "Truffade Nero",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Truffade Nero personalizado 28",
+      nombre: "Truffade Nero personalizado",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Pegassi Osiris 16",
+      nombre: "Pegassi Osiris",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Ocelot Penetrator 28",
+      nombre: "Ocelot Penetrator",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Annis RE-7B 26",
+      nombre: "Annis RE-7B",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Pegassi Reaper 25",
+      nombre: "Pegassi Reaper",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Coil Rocket Voltic 28",
+      nombre: "Coil Rocket Voltic",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Ubermacht SC1 32",
+      nombre: "Ubermacht SC1",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Karin Sultan RS 22",
+      nombre: "Karin Sultan RS",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Progen T20 17",
+      nombre: "Progen T20",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Cheval Taipan 33",
+      nombre: "Cheval Taipan",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Pegassi Tempesta 28",
+      nombre: "Pegassi Tempesta",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Pegassi Tezeract 33",
+      nombre: "Pegassi Tezeract",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Grotti Turismo R 7",
+      nombre: "Grotti Turismo R",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Overflod Tyrant 33",
+      nombre: "Overflod Tyrant",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Progen Tyrus 26",
+      nombre: "Progen Tyrus",
       foto: "#",
       compra: "#"
     },
@@ -161,17 +161,17 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Dewbauchee Vagner 30",
+      nombre: "Dewbauchee Vagner",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Grotti Vigilante 31",
+      nombre: "Grotti Vigilante",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Grotti Visione 31",
+      nombre: "Grotti Visione",
       foto: "#",
       compra: "#"
     },
@@ -181,22 +181,22 @@ const superVehiculos = [
       compra: "#"
     },
     {
-      nombre: "Coil Voltic sin toldo 8",
+      nombre: "Coil Voltic sin toldo",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Grotti X80 Proto 25",
+      nombre: "Grotti X80 Proto",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Ocelot XA-21 30",
+      nombre: "Ocelot XA-21",
       foto: "#",
       compra: "#"
     },
     {
-      nombre: "Pegassi Zentorno 8",
+      nombre: "Pegassi Zentorno",
       foto: "#",
       compra: "#"
     }

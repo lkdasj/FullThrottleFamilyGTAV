@@ -2,158 +2,158 @@
 const camionetas = [
     {
       nombre: "Bravado Bison",
-      foto: "#", // Poner el enlace de la imagen cuando esté disponible
-      compra: "#" // Poner el enlace de compra cuando esté disponible
+      foto: "img-coches/camionetas/Bravado-Bison.png", // Poner el enlace de la imagen cuando esté disponible
+      compra: "" // Poner el enlace de compra cuando esté disponible
     },
     {
       nombre: "Bravado Bison (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bravado-bison-ii.png",
+      compra: ""
     },
     {
       nombre: "Bravado Bison (III)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bravado-bison-iii.png",
+      compra: ""
     },
     {
       nombre: "Vapid Bobcat XL",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/vapid-bobcat-xl.png",
+      compra: ""
     },
     {
       nombre: "Boxville",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/boxville.png",
+      compra: ""
     },
     {
       nombre: "Boxville (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/boxville-ii.png",
+      compra: ""
     },
     {
       nombre: "Boxville (III)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/boxville-iii.png",
+      compra: ""
     },
     {
-      nombre: "Boxville (IV) 15",
-      foto: "#",
-      compra: "#"
+      nombre: "Boxville (IV)",
+      foto: "img-coches/camionetas/Boxville-iv.png",
+      compra: ""
     },
     {
-      nombre: "Brute Boxville blindado 28",
-      foto: "#",
-      compra: "#"
+      nombre: "Brute Boxville blindado ",
+      foto: "img-coches/camionetas/brute-boxville-blindado.png",
+      compra: ""
     },
     {
       nombre: "Declasse Burrito",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-burrito.png",
+      compra: ""
     },
     {
       nombre: "Declasse Burrito (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-burrito-ii.png",
+      compra: ""
     },
     {
       nombre: "Declasse Burrito (III)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-burrito-iii.png",
+      compra: ""
     },
     {
       nombre: "Declasse Burrito (IV)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-burrito-iv.png",
+      compra: ""
     },
     {
       nombre: "Camioneta de tacos",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/camioneta-de-tacos.png",
+      compra: ""
     },
     {
       nombre: "Brute Camper",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/brute-camper.png",
+      compra: ""
     },
     {
       nombre: "Declasse Gang Burrito",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-gang-burrito.png",
+      compra: ""
     },
     {
       nombre: "Declasse Gang Burrito (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/declasse-gang-burrito-ii.png",
+      compra: ""
     },
     {
       nombre: "Zirconium Journey",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/zirconium-journey.png",
+      compra: ""
     },
     {
       nombre: "Vapid Minivan",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/vapid-minivan.png",
+      compra: ""
     },
     {
-      nombre: "Vapid Minivan personalizado 24",
-      foto: "#",
-      compra: "#"
+      nombre: "Vapid Minivan personalizado",
+      foto: "img-coches/camionetas/vapid-minivan-personalizado.png",
+      compra: ""
     },
     {
-      nombre: "Bravado Paradise 3",
-      foto: "#",
-      compra: "#"
+      nombre: "Bravado Paradise",
+      foto: "img-coches/camionetas/bravado-paradise.png",
+      compra: ""
     },
     {
       nombre: "Brute Pony",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/brute-pony.png",
+      compra: ""
     },
     {
       nombre: "Brute Pony (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/brute-pony-ii.png",
+      compra: ""
     },
     {
       nombre: "Bravado Rumpo",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bravado-rumpo.png",
+      compra: ""
     },
     {
       nombre: "Bravado Rumpo (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bravado-rumpo-ii.png",
+      compra: ""
     },
     {
-      nombre: "Bravado Rumpo personalizada 25",
-      foto: "#",
-      compra: "#"
+      nombre: "Bravado Rumpo personalizada",
+      foto: "img-coches/camionetas/bravado-rumpo-personalizada.png",
+      compra: ""
     },
     {
       nombre: "Vapid Speedo",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/vapid-speedo.png",
+      compra: ""
     },
     {
       nombre: "BF Surfer",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bf-surfer.png",
+      compra: ""
     },
     {
       nombre: "BF Surfer (II)",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bf-surfer-ii.png",
+      compra: ""
     },
     {
       nombre: "Bravado Youga",
-      foto: "#",
-      compra: "#"
+      foto: "img-coches/camionetas/bravado-youga.png",
+      compra: ""
     },
     {
-      nombre: "Bravado Youga Classic 27",
-      foto: "#",
-      compra: "#"
+      nombre: "Bravado Youga Classic",
+      foto: "img-coches/camionetas/bravado-youga-classic.png",
+      compra: ""
     }
   ];
   
