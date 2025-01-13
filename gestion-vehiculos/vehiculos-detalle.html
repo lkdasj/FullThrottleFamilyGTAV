@@ -16,9 +16,13 @@
 <body>
     <header>
         <h1>Full Throttle Garage</h1>
-        <a href="/index.html">volver a inicio</a>
+        <a href="https://lkdasj.github.io/FullThrottleFamilyGTAV/">volver a inicio</a>
     </header>
 
+    <div id="descripcion">
+        <h2>La pagina esta en trabajo de avance, se notificara para cuando estara listo</h2>
+    </div>
+    
     <div id="descripcion">
         <h2>Bienvenido al espacio definitivo para los amantes de los vehículos de GTAV!</h2>
         <p>
@@ -34,17 +38,17 @@
         </p>
     </div>
 
-    <main>
-        <!-- Lupa de busqueda de los vehiculos por nombre -->
+    <!--<main>
+         Lupa de busqueda de los vehiculos por nombre --
         <div id="busqueda">
             <input type="text" id="input-busqueda" placeholder="Buscar por nombre o categoría">
             <button id="boton-busqueda"><i class="fas fa-search"> Buscar</i></button>
         </div>
 
-        <!-- Botón para mostrar categorías -->
+         Botón para mostrar categorías --
         <button id="mostrar-categorias">Mostrar Categorías</button>
 
-        <!-- Contenedor de categorías, inicialmente oculto -->
+         Contenedor de categorías, inicialmente oculto --
         <section id="categorias" style="display:none;">
             <ul id="lista-categorias">
                 <li><button class="categoria-btn" data-categoria="aviones">Aviones</button></li>
@@ -71,46 +75,21 @@
             </ul>
         </section>
 
-        <!-- Contenedor de vehículos, inicialmente oculto -->
+         Contenedor de vehículos, inicialmente oculto --
         <section id="vehiculos" style="display:none;">
             <h2>Vehículos</h2>
             <div id="vehiculos-lista"></div>
+            <div id="paginacion"></div>
         </section>
-    </main>
+    </main>-->
 
     <footer>
         <p>&copy; 2025 Vehículos Especializados</p>
     </footer>
 
     <!-- Incluir archivos JS -->
-    <script src="aviones.js"></script>
-    <script src="barcos.js"></script>
-    <script src="bicis.js"></script>
-    <script src="bolidos.js"></script>
-    <script src="camionetas.js"></script>
-    <script src="comerciales.js"></script>
-    <script src="compactos.js"></script>
-    <script src="cupes.js"></script>
-    <script src="deportivos-clasicos.js"></script>    
-    <script src="deportivos.js"></script>    
-    <script src="emergencias.js"></script>    
-    <script src="especializados.js"></script>    
-    <script src="helicopteros.js"></script>
-    <script src="industriales.js"></script>
-    <script src="militares.js"></script>
-    <script src="motos.js"></script>
-    <script src="sedanes.js"></script>
-    <script src="servicio.js"></script>
-    <script src="super.js"></script>
-    <script src="todocaminos.js"></script>
-    <script src="todoterrenos.js"></script>
-
-
+    <script src="datos almacenados.js"></script>
     <script>
-        let vehiculosPaginados = [];
-        let paginaActual = 1;
-        const vehiculosPorPagina = 20;
-
         // Mostrar/ocultar categorías
         document.getElementById("mostrar-categorias").addEventListener("click", function() {
             const categorias = document.getElementById("categorias");
@@ -224,115 +203,6 @@
             mostrarControlesPaginacion();
         }
 
-        // Crear botones de paginación
-        function crearBotonesPaginacion() {
-            const paginacionContainer = document.createElement("div");
-            paginacionContainer.id = "paginacion";
-            const vehiculosSection = document.getElementById("vehiculos");
-            
-            // Limpiar botones anteriores si existen
-            const botonesExistentes = document.getElementById("paginacion");
-            if (botonesExistentes) {
-                botonesExistentes.remove();
-            }
-
-            // Crear botones de página
-            for (let i = 1; i <= vehiculosPaginados.length; i++) {
-                const boton = document.createElement("button");
-                boton.textContent = i;
-                boton.classList.add("paginacion-boton");
-                if (i === paginaActual) {
-                    boton.classList.add("activo");
-                }
-                boton.addEventListener("click", () => {
-                    cambiarPagina(i);
-                });
-                paginacionContainer.appendChild(boton);
-            }
-
-            vehiculosSection.appendChild(paginacionContainer);
-        }
-
-        // Cambiar a una página específica
-        function cambiarPagina(numeroPagina) {
-            paginaActual = numeroPagina;
-
-            // Mostrar los vehículos de la página seleccionada
-            const vehiculosLista = document.getElementById("vehiculos-lista");
-            vehiculosLista.innerHTML = ""; // Limpiar la lista
-
-            const vehiculosEnPagina = vehiculosPaginados[paginaActual - 1];
-            vehiculosEnPagina.forEach(vehiculo => {
-                const divVehiculo = document.createElement("div");
-                divVehiculo.classList.add("vehiculo-item");
-
-                divVehiculo.innerHTML = `
-                    <h3>${vehiculo.nombre}</h3>
-                    <img src="${vehiculo.foto}" alt="${vehiculo.nombre}" />
-                `;
-                vehiculosLista.appendChild(divVehiculo);
-            });
-
-            // Actualizar botones de paginación
-            crearBotonesPaginacion();
-        }
-
-        function agregarControlesPaginacion() {
-            const contenedor = document.createElement("div");
-            contenedor.id = "paginacion-controles";
-
-            const botonAnterior = document.createElement("button");
-            botonAnterior.textContent = "Anterior";
-            botonAnterior.disabled = (paginaActual === 1);
-            botonAnterior.addEventListener("click", () => {
-                if (paginaActual > 1) {
-                    paginaActual--;
-                    mostrarPagina();
-                }
-            });
-
-            const botonSiguiente = document.createElement("button");
-            botonSiguiente.textContent = "Siguiente";
-            botonSiguiente.disabled = (paginaActual === vehiculosPaginados.length);
-            botonSiguiente.addEventListener("click", () => {
-                if (paginaActual < vehiculosPaginados.length) {
-                    paginaActual++;
-                    mostrarPagina();
-                }
-            });
-
-            contenedor.appendChild(botonAnterior);
-            contenedor.appendChild(botonSiguiente);
-            document.getElementById("vehiculos").appendChild(contenedor);
-        }
-
-        function mostrarControlesPaginacion() {
-            const controles = document.getElementById("controles-paginacion");
-            controles.innerHTML = ""; // Limpiar controles anteriores
-
-            if (vehiculosPaginados.length <= 1) return; // No mostrar controles si hay una sola página
-
-            if (paginaActual > 1) {
-                const btnAnterior = document.createElement("button");
-                btnAnterior.textContent = "Anterior";
-                btnAnterior.addEventListener("click", () => {
-                    paginaActual--;
-                    mostrarPagina();
-                });
-                controles.appendChild(btnAnterior);
-            }
-
-            if (paginaActual < vehiculosPaginados.length) {
-                const btnSiguiente = document.createElement("button");
-                btnSiguiente.textContent = "Siguiente";
-                btnSiguiente.addEventListener("click", () => {
-                    paginaActual++;
-                    mostrarPagina();
-                });
-                controles.appendChild(btnSiguiente);
-            }
-        }
-
         //seccion de la lupa
         document.getElementById("boton-busqueda").addEventListener("click", function() {
             const termino = document.getElementById("input-busqueda").value.toLowerCase().trim();
@@ -370,8 +240,8 @@
             // Mostrar la sección de vehículos
             document.getElementById("vehiculos").style.display = "block";
         });
-
     </script>
+    
     
 </body>
 </html>

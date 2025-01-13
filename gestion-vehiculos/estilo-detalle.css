@@ -105,9 +105,9 @@ header a:hover {
 }
 
 /* Botón de mostrar categorías */
-#mostrar-categorias {
+#mostrar-categorias, #mostrar-coleccion{
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px 20px;
     background: linear-gradient(135deg, #ff8800, #ff5500);
     color: #fff;
@@ -120,18 +120,18 @@ header a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-#mostrar-categorias:hover {
+#mostrar-categorias:hover, #mostrar-coleccion:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
 }
 
 /* Categorías */
-#categorias {
+#categorias,  #colecciones {
     margin: 20px auto;
     text-align: center;
 }
 
-#lista-categorias {
+#lista-categorias, #lista-colecciones{
     display: grid; /* Activar grid */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajustar columnas automáticamente */
     gap: 10px; /* Espacio entre elementos */
@@ -141,7 +141,7 @@ header a:hover {
     margin: 0 auto;
 }
 
-.categoria-btn {
+.categoria-btn, .coleccion-btn {
     height: 50px;
     width: 100px;
     padding: 5px;
@@ -155,7 +155,7 @@ header a:hover {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.categoria-btn:hover {
+.categoria-btn:hover, .coleccion-btn:hover {
     background: #ff5500;
     color: #fff;
     transform: translateY(-3px);
