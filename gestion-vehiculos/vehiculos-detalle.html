@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Throttle Garage</title>
+    <title>Full Throttle Garaje</title>
     <link rel="stylesheet" href="estilo-detalle.css">
-    <link rel="icon" href="/img-web/icono.png">
+    <link rel="stylesheet" href="/img-web/icono.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -14,21 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1>Full Throttle Garage</h1>
-        <a href="https://lkdasj.github.io/FullThrottleFamilyGTAV/">volver a inicio</a>
+        <a href="https://lkdasj.github.io/FullThrottleFamilyGTAV/">Volver a inicio</a>
     </header>
 
     <div id="descripcion">
-        <h2>La pagina esta en trabajo de avance, se notificara para cuando estara listo</h2>
+        <h2>Aviso solo esta pagina se vera bien para computadores, en formato movil se estara trabajando para ello.</h2>
     </div>
-    
+
+    <!-- Descripción principal -->
     <div id="descripcion">
-        <h2>Bienvenido al espacio definitivo para los amantes de los vehículos de GTAV!</h2>
+        <h2>¡Bienvenido al espacio definitivo para los amantes de los vehículos de GTAV!</h2>
         <p>
             Nuestra página está diseñada para ayudarte a:<br>
             ◉ Organizar tu garaje: Descubre en qué categoría está cada vehículo y mantén todo en orden según tus preferencias.<br>
-            ◉ Crear colecciones únicas: Inspírate con temas como los mas rapidos, autos clásicos, superdeportivos, todoterrenos y mucho más.<br>
+            ◉ Crear colecciones únicas: Inspírate con temas como los más rápidos, autos clásicos, superdeportivos, todoterrenos y mucho más.<br>
             ◉ Explorar posibilidades: Encuentra ideas para personalizar y mejorar tus vehículos favoritos.<br>
         </p>
         <p>
@@ -38,210 +40,152 @@
         </p>
     </div>
 
-    <!--<main>
-         Lupa de busqueda de los vehiculos por nombre --
-        <div id="busqueda">
-            <input type="text" id="input-busqueda" placeholder="Buscar por nombre o categoría">
-            <button id="boton-busqueda"><i class="fas fa-search"> Buscar</i></button>
-        </div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar vehículos...">
+    </div>
 
-         Botón para mostrar categorías --
-        <button id="mostrar-categorias">Mostrar Categorías</button>
+    <div class="header">
+        <button id="categoriasBtn">Categorías</button>
+        <button id="coleccionesBtn">Colecciones</button>
+    </div>
 
-         Contenedor de categorías, inicialmente oculto --
-        <section id="categorias" style="display:none;">
-            <ul id="lista-categorias">
-                <li><button class="categoria-btn" data-categoria="aviones">Aviones</button></li>
-                <li><button class="categoria-btn" data-categoria="barcos">Barcos</button></li>
-                <li><button class="categoria-btn" data-categoria="bicis">Bicicletas</button></li>
-                <li><button class="categoria-btn" data-categoria="bolidos">Bolidos</button></li>
-                <li><button class="categoria-btn" data-categoria="camionetas">Camionetas</button></li>
-                <li><button class="categoria-btn" data-categoria="comerciales">Comerciales</button></li>
-                <li><button class="categoria-btn" data-categoria="compactos">Compactos</button></li>
-                <li><button class="categoria-btn" data-categoria="cupes">Cupés</button></li>
-                <li><button class="categoria-btn" data-categoria="deportivos-clasicos">Deportivos clasicos</button></li>
-                <li><button class="categoria-btn" data-categoria="deportivos">Deportivos</button></li>
-                <li><button class="categoria-btn" data-categoria="emergencias">Emergencias</button></li>
-                <li><button class="categoria-btn" data-categoria="especializados">Especializados</button></li>
-                <li><button class="categoria-btn" data-categoria="helicopteros">Helicopteros</button></li>
-                <li><button class="categoria-btn" data-categoria="industriales">Industriales</button></li>
-                <li><button class="categoria-btn" data-categoria="militares">Militares</button></li>
-                <li><button class="categoria-btn" data-categoria="motos">Motos</button></li>
-                <li><button class="categoria-btn" data-categoria="sedanes">Sedanes</button></li>
-                <li><button class="categoria-btn" data-categoria="servicio">Servicio</button></li>
-                <li><button class="categoria-btn" data-categoria="superVehiculos">Super</button></li>
-                <li><button class="categoria-btn" data-categoria="todocaminos">Todocaminos</button></li>
-                <li><button class="categoria-btn" data-categoria="todoterrenos">Todoterrenos</button></li>
-            </ul>
-        </section>
+    <div class="results" id="resultsContainer"></div>
 
-         Contenedor de vehículos, inicialmente oculto --
-        <section id="vehiculos" style="display:none;">
-            <h2>Vehículos</h2>
-            <div id="vehiculos-lista"></div>
-            <div id="paginacion"></div>
-        </section>
-    </main>-->
+    <div class="pagination" id="paginationContainer"></div>
 
     <footer>
         <p>&copy; 2025 Vehículos Especializados</p>
     </footer>
 
-    <!-- Incluir archivos JS -->
-    <script src="datos almacenados.js"></script>
+    <script src="datos-categorias.js"></script>
+    <script src="datos-colecciones.js"></script>
     <script>
-        // Mostrar/ocultar categorías
-        document.getElementById("mostrar-categorias").addEventListener("click", function() {
-            const categorias = document.getElementById("categorias");
-            categorias.style.display = categorias.style.display === "none" ? "block" : "none";
+        let searchContext = 'categoria';
+        let currentData = [];
+        let currentPage = 1;
+        const itemsPerPage = 16;
+    
+        // DOM elements
+        const resultsContainer = document.getElementById('resultsContainer');
+        const paginationContainer = document.getElementById('paginationContainer');
+        const searchInput = document.getElementById('searchInput');
+    
+        let vehiculos = [];
+
+        document.getElementById('categoriasBtn').addEventListener('click', () => {
+            searchContext = 'categoria';
+            vehiculos = categoriasVehiculos;
+            console.log("Contexto cambiado a: Categorías");
+            displayGroupButtons(categoriasVehiculos, 'categoria');
         });
     
-        // Evento de clic en las categorías
-        const categoriaBtns = document.querySelectorAll(".categoria-btn");
-        categoriaBtns.forEach(button => {
-            button.addEventListener("click", function() {
-                const categoria = button.getAttribute("data-categoria");
-                mostrarVehiculos(categoria);
+        document.getElementById('coleccionesBtn').addEventListener('click', () => {
+            searchContext = 'coleccion';
+            vehiculos = coleccionesVehiculos;
+            console.log("Contexto cambiado a: Colecciones");
+            displayGroupButtons(coleccionesVehiculos, 'coleccion');
+        });
+    
+        // Evento de búsqueda
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            console.log("Texto buscado:", query);
+            let filtered = [];
 
-                // Ocultar el botón de "Mostrar Categorías"
-                document.getElementById("categorias").style.display = "none";
-            });
+            if (searchContext === 'categoria') {
+                console.log("Buscando en Categorías");
+                filtered = vehiculos
+                    .filter(group => group.categoria) // Filtrar por categorías
+                    .flatMap(group => group.datos) // Extraer vehículos
+                    .filter(item => item.nombre.toLowerCase().includes(query)); // Filtrar por nombre
+            } else if (searchContext === 'coleccion') {
+                console.log("Buscando en Colecciones");
+                filtered = vehiculos
+                    .filter(group => group.coleccion) // Filtrar por colecciones
+                    .flatMap(group => group.datos) // Extraer ideas
+                    .filter(item =>
+                        item.nombre.toLowerCase().includes(query) || // Buscar por nombre
+                        (item.inspirado && item.inspirado.toLowerCase().includes(query)) // Buscar por inspiración
+                    );
+            }
+
+            console.log("Resultados filtrados:", filtered);
+            currentPage = 1;
+            displayResults(filtered); // Mostrar resultados filtrados
+            setupPagination(filtered); // Configurar paginación
         });
 
-        // Función para mostrar vehículos según la categoría seleccionada
-        function mostrarVehiculos(categoria) {
-            const vehiculosLista = document.getElementById("vehiculos-lista");
-            vehiculosLista.innerHTML = ""; // Limpiar la lista antes de agregar nuevos vehículos
-    
-            // Lógica para cargar los vehículos dependiendo de la categoría
-            let vehiculos = [];
-            if (categoria === "aviones") {
-                vehiculos = aviones;  
-            } else if (categoria === "barcos") {
-                vehiculos = barcos;
-            } else if (categoria === "bicis") {
-                vehiculos = bici;  
-            } else if (categoria === "bolidos") {
-                vehiculos = bolidos;
-            } else if (categoria === "camionetas") {
-                vehiculos = camionetas;  
-            } else if (categoria === "comerciales") {
-                vehiculos = comerciales;  
-            } else if (categoria === "compactos") {
-                vehiculos = compactos;
-            } else if (categoria === "cupes") {
-                vehiculos = cupes;
-            } else if (categoria === "deportivos-clasicos") {
-                vehiculos = deportivosClasicos;
-            } else if (categoria === "deportivos") {
-                vehiculos = deportivos;
-            } else if (categoria === "emergencias") {
-                vehiculos = emergencias;
-            } else if (categoria === "especializados") {
-                vehiculos = especializados;
-            } else if (categoria === "helicopteros") {
-                vehiculos = helicopteros;
-            } else if (categoria === "industriales") {
-                vehiculos = industriales;
-            } else if (categoria === "militares") {
-                vehiculos = militares;
-            } else if (categoria === "motos") {
-                vehiculos = motos;
-            } else if (categoria === "sedanes") {
-                vehiculos = sedanes;
-            } else if (categoria === "servicio") {
-                vehiculos = servicio;
-            } else if (categoria === "superVehiculos") {
-                vehiculos = superVehiculos;
-            } else if (categoria === "todocaminos") {
-                vehiculos = todocaminos;
-            } else if (categoria === "todoterrenos") {
-                vehiculos = todoterrenos;
-            }
-
-           // Mostrar los vehículos en la lista
-           vehiculos.forEach(vehiculo => {
-                const divVehiculo = document.createElement("div");
-                divVehiculo.classList.add("vehiculo-item");
-    
-                divVehiculo.innerHTML = `
-                    <h3>${vehiculo.nombre}</h3>
-                    <img src="${vehiculo.foto}" alt="${vehiculo.nombre}" />
-                `;
-                vehiculosLista.appendChild(divVehiculo);
-            });
-    
-            // Mostrar la sección de vehículos
-            document.getElementById("vehiculos").style.display = "block";
-    
-            // Dividir los vehículos en páginas
-            vehiculosPaginados = [];
-            for (let i = 0; i < vehiculos.length; i += vehiculosPorPagina) {
-                vehiculosPaginados.push(vehiculos.slice(i, i + vehiculosPorPagina));
-            }
-
-            paginaActual = 1; // Reiniciar a la primera página
-            mostrarPagina();
+        // Función para cargar datos iniciales
+        function loadData(data, type) {
+            let contextData = data.filter(group => group[type]); // Filtrar por tipo (categoría o colección)
+            console.log(`Cargando datos para: ${type}`, contextData);
+            currentData = contextData.flatMap(group => group.datos); // Obtener todos los vehículos o ideas
+            currentPage = 1; // Reiniciar a la primera página
+            displayResults(currentData); // Mostrar datos
+            setupPagination(currentData); // Configurar paginación
         }
+            
+        function displayGroupButtons(data, type) {
+            resultsContainer.innerHTML = '';
+            paginationContainer.innerHTML = '';
+            const groupNames = data.map(group => group[type]);
 
-        function mostrarPagina() {
-            const vehiculosLista = document.getElementById("vehiculos-lista");
-            vehiculosLista.innerHTML = ""; // Limpiar la lista antes de mostrar la página
-
-            const vehiculosEnPagina = vehiculosPaginados[paginaActual - 1] || [];
-            vehiculosEnPagina.forEach(vehiculo => {
-                const divVehiculo = document.createElement("div");
-                divVehiculo.classList.add("vehiculo-item");
-
-                divVehiculo.innerHTML = `
-                    <h3>${vehiculo.nombre}</h3>
-                    <img src="${vehiculo.foto}" alt="${vehiculo.nombre}" />
-                `;
-                vehiculosLista.appendChild(divVehiculo);
-            });
-
-            mostrarControlesPaginacion();
-        }
-
-        //seccion de la lupa
-        document.getElementById("boton-busqueda").addEventListener("click", function() {
-            const termino = document.getElementById("input-busqueda").value.toLowerCase().trim();
-            const vehiculosLista = document.getElementById("vehiculos-lista");
-            vehiculosLista.innerHTML = ""; // Limpiar resultados anteriores
-
-            // Combinar vehículos de todas las categorías
-            let todosLosVehiculos = [
-                ...aviones, ...barcos, ...bici, ...bolidos, ...camionetas, ...comerciales,
-                ...compactos, ...cupes, ...deportivosClasicos, ...deportivos, ...emergencias,
-                ...especializados, ...helicopteros, ...industriales, ...militares, ...motos,
-                ...sedanes, ...servicio, ...superVehiculos, ...todocaminos, ...todoterrenos
-            ];
-
-            // Filtrar vehículos por el término de búsqueda
-            const vehiculosFiltrados = todosLosVehiculos.filter(vehiculo => 
-                vehiculo.nombre.toLowerCase().includes(termino)
-            );
-
-            if (vehiculosFiltrados.length === 0) {
-                vehiculosLista.innerHTML = "<p>No se encontraron resultados.</p>";
-            } else {
-                vehiculosFiltrados.forEach(vehiculo => {
-                    const divVehiculo = document.createElement("div");
-                    divVehiculo.classList.add("vehiculo-item");
-
-                    divVehiculo.innerHTML = `
-                        <h3>${vehiculo.nombre}</h3>
-                        <img src="${vehiculo.foto}" alt="${vehiculo.nombre}" />
-                    `;
-                    vehiculosLista.appendChild(divVehiculo);
+            // Crear botones para cada categoría o colección
+            groupNames.forEach(name => {
+                const button = document.createElement('button');
+                button.textContent = name;
+                button.classList.add('filter-button'); // Clase genérica
+                button.classList.add(name.toLowerCase().replace(/\s+/g, '-')); // Clase específica (ej. 'aviones')
+                
+                button.addEventListener('click', () => {
+                    const group = data.find(g => g[type] === name);
+                    currentData = group ? group.datos : [];
+                    currentPage = 1; // Reiniciar a la primera página
+                    displayResults(currentData);
+                    setupPagination(currentData);
                 });
+                resultsContainer.appendChild(button);
+            });
+        }
+    
+        function displayResults(data) {
+            resultsContainer.innerHTML = '';
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedData = data.slice(start, end);
+
+            if (paginatedData.length === 0) {
+                resultsContainer.innerHTML = '<p>No se encontraron resultados, devidamente se esta trabajando en ello.</p>';
+                return;
             }
 
-            // Mostrar la sección de vehículos
-            document.getElementById("vehiculos").style.display = "block";
-        });
-    </script>
+            paginatedData.forEach(vehicle => {
+                const vehicleDiv = document.createElement('div');
+                vehicleDiv.classList.add('vehicle');
+                vehicleDiv.innerHTML = `
+                    <p>${vehicle.nombre}</p>
+                    <img src="${vehicle.imagen}" alt="${vehicle.nombre}">
+                    ${vehicle.inspirado ? `<small>${vehicle.inspirado}</small>` : ''}
+                `;
+                resultsContainer.appendChild(vehicleDiv);
+            });
+        }
     
+        function setupPagination(data) {
+            paginationContainer.innerHTML = '';
+            const totalPages = Math.ceil(data.length / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.textContent = i;
+                btn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayResults(data);
+                });
+                paginationContainer.appendChild(btn);
+            }
+        }
+    </script>
     
 </body>
 </html>

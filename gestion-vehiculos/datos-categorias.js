@@ -1,22 +1,6 @@
-//  const vehiculos = [
-//      {
-//          categoria: 'aviones como ejemplo',
-//          datos: [
-//              { nombre: "nombre del vehiculo y modelo", imagen: "ruta de imagen" },
-//              { nombre: "nombre del vehiculo y modelo", imagen: "ruta de imagen" }
-//          ]
-//      },
-//      {
-//          categoria: 'otra categoria como ejemplo',
-//          datos: [
-//              { nombre: "nombre del vehiculo y modelo", imagen: "ruta de imagen" },
-//              { nombre: "nombre del vehiculo y modelo", imagen: "ruta de imagen" }
-//          ]
-//      }
-//  ]
 
-const vehiculos = [
-    {categoria: 'aviones',
+const categoriasVehiculos = [
+    {categoria: 'Aviones',
         datos: [
             { nombre: "Alpha-Z1", imagen: "img-coches/aviones/alpha-z1.png" },
             { nombre: "Mammoth Avenger", imagen: "img-coches/aviones/avenger.png" },
@@ -55,7 +39,7 @@ const vehiculos = [
             { nombre: "Volatol", imagen: "img-coches/aviones/Volatol.png" }
         ]
     },
-    {categoria: 'barcos',
+    {categoria: 'Barcos',
         datos: [
             { nombre: "Nagasaki Dinghy", imagen: "img-coches/barcos/Nagasaki-Dinghy.png" },
             { nombre: "Nagasaki Dinghy (II)", imagen: "img-coches/barcos/Nagasaki-Dinghy-II.png" },
@@ -75,7 +59,7 @@ const vehiculos = [
             { nombre: "Shitzu Tropic", imagen: "img-coches/barcos/Shitzu-Tropic.png" }
         ]
     },
-    {categoria: "bicis",
+    {categoria: "Bicis",
         datos: [
             { nombre: "BMX", imagen: "img-coches/bicis/BMX.png"},
             { nombre: "Cruiser", imagen: "img-coches/bicis/Cruiser.png"},
@@ -86,7 +70,7 @@ const vehiculos = [
             { nombre: "Whippet", imagen: "img-coches/bicis/Whippet.png"}
         ]
     },
-    {categoria: "bolidos",
+    {categoria: "Bolidos",
         datos: [
             {nombre: "Vapid Blade", imagen: "img-coches/bolidos/Vapid-Blade.png"},
             {nombre: "Albany Buccaneer", imagen: "img-coches/bolidos/Albany-Buccaneer.png"},
@@ -135,7 +119,7 @@ const vehiculos = [
             {nombre: "Declasse Yosemite", imagen: "img-coches/bolidos/Declasse-Yosemite.png"}
         ]
     },
-    {categoria: "camionetas",
+    {categoria: "Camionetas",
         datos: [
             {nombre: "Bravado Bison", imagen: "img-coches/camionetas/Bravado-Bison.png"},
             {nombre: "Bravado Bison (II)", imagen: "img-coches/camionetas/bravado-bison-ii.png"},
@@ -170,7 +154,7 @@ const vehiculos = [
             {nombre: "Bravado Youga Classic", imagen: "img-coches/camionetas/bravado-youga-classic.png"}
         ]
     },
-    {categoria: "comerciales",
+    {categoria: "Comerciales",
         datos: [
             { nombre: "Vapid Benson", imagen: "img-coches/comerciales/vapid-benson.png"},
             { nombre: "HVY Biff", imagen: "img-coches/comerciales/hvy-biff.png"},
@@ -187,7 +171,7 @@ const vehiculos = [
             { nombre: "Brute Stockade", imagen: "img-coches/comerciales/brute-stockade.png"}
         ]
     },
-    {categoria: "compactos",
+    {categoria: "Compactos",
         datos: [
             {nombre: "Dinka Blista", imagen: "img-coches/compactos/Dinka-Blista.png"},
             {nombre: "Grotti Brioso R/A", imagen: "img-coches/compactos/Grotti-Brioso-R-A.png"},
@@ -200,7 +184,7 @@ const vehiculos = [
             {nombre: "Declasse Rhapsody", imagen: "img-coches/compactos/Declasse-Rhapsody.png"}
         ]
     },
-    {categoria: "cupes",
+    {categoria: "Cupes",
         datos: [
             {nombre: "Enus Cognoscenti Cabrio", imagen: "img-coches/cupes/enus-cognoscenti-cabrio.png"},
             {nombre: "Dewbauchee Exemplar", imagen: "img-coches/cupes/Dewbauchee-Exemplar.png"},
@@ -218,7 +202,7 @@ const vehiculos = [
             {nombre: "Ubermacht Zion Cabrio", imagen: "img-coches/cupes/ubermacht-zion-cabrio.png"}
         ]
     },
-    {categoria: "deportivos-clasicos",
+    {categoria: "Deportivos Clasicos",
         datos: [
             {nombre: "Karin 190z", imagen: "img-coches/deportivo-clasico/karin-190z.png"},
             {nombre: "Ocelot Ardent", imagen: "img-coches/deportivo-clasico/ocelot-ardent.png"},
@@ -260,12 +244,12 @@ const vehiculos = [
             {nombre: "Truffade Z-Type", imagen: "img-coches/deportivo-clasico/truffade-z-type.png"}
         ]
     },
-    {categoria: "deportivos", //falta imagenes
+    {categoria: "Deportivos", //falta imagenes
         datos: [
 
         ]
     },
-    {categoria: "emergencias",
+    {categoria: "Emergencias",
         datos: [
             { nombre: "Ambulancia", imagen: "img-coches/emergencias/ambulancia.png"},
             { nombre: "Antidisturbios", imagen: "img-coches/emergencias/antidisturbios.png"},
@@ -286,7 +270,7 @@ const vehiculos = [
             { nombre: "Transporte de la policía", imagen: "img-coches/emergencias/transporte-de-la-policía.png"}
         ]
     },
-    {categoria: "especializados",
+    {categoria: "Especializados",
         datos: [
             { nombre: "Airtug", imagen: "img-coches/especializados/airtug.png"},
             { nombre: "Caddy", imagen: "img-coches/especializados/caddy.png"},
@@ -307,7 +291,7 @@ const vehiculos = [
             { nombre: "Vehículo utilitario (III)", imagen: "img-coches/especializados/vehículo-utilitario-iii.png"}
         ]
     },
-    {categoria: "helicopteros",
+    {categoria: "Helicopteros",
         datos: [
             { nombre: "Akula", imagen: "img-coches/helicopteros/akula.png"},
             { nombre: "Western Annihilator", imagen: "img-coches/helicopteros/western-annihilator.png"},
@@ -333,7 +317,7 @@ const vehiculos = [
             { nombre: "Buckingham Volatus", imagen: "img-coches/helicopteros/buckingham-volatus.png"}
         ]
     },
-    {categoria: "industriales",
+    {categoria: "Industriales",
         datos:[
             { nombre: "HVY Dozer", imagen: "img-coches/industriales/HVY-Dozer.png"},
             { nombre: "HVY Dump", imagen: "img-coches/industriales/HVY-Dump.png"},
@@ -348,7 +332,7 @@ const vehiculos = [
             { nombre: "HVY Tuneladora", imagen: "img-coches/industriales/HVY-Tuneladora.png"}
         ]
     },
-    {categoria: "militares",
+    {categoria: "Militares",
         datos: [
             { nombre: "HVY APC", imagen: "img-coches/militares/HVY-APC.png"},
             { nombre: "HVY Barracks", imagen: "img-coches/militares/HVY-Barracks.png"},
@@ -363,10 +347,10 @@ const vehiculos = [
             { nombre: "TM-02 Khanjali", imagen: "img-coches/militares/TM-02-Khanjali.png"}
         ]
     },
-    {categoria: "motos", //falta imagenes
+    {categoria: "Motos", //falta imagenes
         datos: []
     },
-    {categoria: "sedanes",
+    {categoria: "Sedanes",
         datos: [
             {nombre: "Declasse Asea", imagen: "img-coches/sedanes/Declasse-Asea.png"},
             {nombre: "Karin Asterope", imagen: "img-coches/sedanes/Karin-Asterope.png"},
@@ -399,7 +383,7 @@ const vehiculos = [
             {nombre: "Albany Washington", imagen: "img-coches/sedanes/Albany-Washington.png"}
         ]
     },
-    {categoria: "servicio",
+    {categoria: "Servicio",
         datos: [
             { nombre: "Autobús", imagen: "img-coches/servicios/Autobús.png"},
             { nombre: "Autobús del aeropuerto", imagen: "img-coches/servicios/Autobús-del-aeropuerto.png"},
@@ -413,10 +397,10 @@ const vehiculos = [
             { nombre: "MTL Wastelander", imagen: "img-coches/servicios/MTL-Wastelander.png"}
         ]
     },
-    {categoria: "superVehiculos", //falta imagenes
+    {categoria: "Super", //falta imagenes
         datos: []
     },
-    {categoria: "todocamino",
+    {categoria: "Todocamino",
         datos: [
             {nombre: "Gallivanter Baller", imagen: "img-coches/todocamino/gallivanter-baller.png"},
             {nombre: "Gallivanter Baller (II)", imagen: "img-coches/todocamino/gallivanter-baller-ii.png"},
@@ -446,7 +430,7 @@ const vehiculos = [
             {nombre: "Benefactor XLS (blindado)", imagen: "img-coches/todocamino/benefactor-xls-blindado.png"}
         ]
     },
-    {categoria: "todoterreno",
+    {categoria: "Todoterreno",
         datos: [
             { nombre: "BF Bifta", imagen: "img-coches/todoterrenos/bf-bifta.png"},
             { nombre: "Nagasaki Blazer", imagen: "img-coches/todoterrenos/nagasaki-blazer.png"},
