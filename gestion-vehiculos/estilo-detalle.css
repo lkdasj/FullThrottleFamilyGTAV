@@ -83,7 +83,7 @@ header a:hover {
 
 .header button {
     padding: 10px 20px;
-    margin: 0px auto;
+    margin: 0px 20px;
     border: none;
     background: linear-gradient(135deg, #ff8800, #ff5500);
     color: #fff;
@@ -97,7 +97,13 @@ header a:hover {
 
 .header button:hover {
     transform: scale(1.1);
+    background: linear-gradient(135deg, #ff5500, #ff8800);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+#resultsContainer {
+    display: grid;
+    gap: 10px;
 }
 
 .filter-button {
@@ -110,6 +116,11 @@ header a:hover {
     cursor: pointer;
     text-align: center;
     transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .filter-button:hover {
@@ -134,16 +145,24 @@ header a:hover {
     outline: none;
 }
 
+.button{
+    display: block;
+    margin: 0 auto 15px auto;
+    width: auto;
+    max-width: 90%;
+}
 /* Contenedor de resultados */
 .results {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
-    max-width: 1800px;
-    margin: 0px auto;
+    padding: 10px;
+    width: auto;
+    max-width: 90%;
+    margin: 0 auto 15px auto;
     text-align: center;
 }
+
 
 .vehicle {
     background: #262525;
@@ -201,6 +220,7 @@ header a:hover {
 .pagination button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #ff5500, #ff8800);
 }
 
 /* Footer */
@@ -214,22 +234,138 @@ footer {
     font-family: 'New rocker', system-ui;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-    .header button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+/* Estilo del Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid black;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para pantallas entre 480px y 780px */
+@media (min-width: 480px) and (max-width: 780px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 32px; /* Ajustar tamaño del título */
+    }
+
+    header a {
+        font-size: 18px;
+    }
+
+    #descripcion {
+        margin: 15px auto;
+        padding: 18px;
+        max-width: 85%;
+    }
+
+    #descripcion h2 {
+        font-size: 24px;
+    }
+
+    #descripcion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    
+
+    .filter-button {
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
+    .search-bar {
+        flex-direction: row; /* Mantener en línea */
+        gap: 10px;
     }
 
     .search-bar input {
-        font-size: 0.9rem;
+        width: 70%;
+        font-size: 15px;
+        padding: 10px;
     }
 
-    .vehicle p {
-        font-size: 1rem;
+    #resultsContainer {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .vehicle {
+        padding: 12px;
     }
 
     .vehicle img {
-        max-height: 150px;
+        max-height: 160px; /* Ajustar altura */
+    }
+
+    .vehicle p {
+        font-size: 1.1rem;
+    }
+
+    .pagination {
+        gap: 15px;
+    }
+
+    .pagination button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 12px;
+        font-size: 13px;
     }
 }
+
