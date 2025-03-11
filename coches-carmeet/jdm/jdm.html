@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coleccion JDM</title>
+  <link rel="stylesheet" href="stilocarmeet.css">
+  <link rel="icon" href="/img-web/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Monoton&family=New+Rocker&family=Sixtyfour&family=Spicy+Rice&display=swap" rel="stylesheet">
+  
+  <!-- Archivo con la lista de coches -->
+  <script src="dataJDM.js"></script>
+</head>
+<body>
+
+  <header>
+    <img src="/img-web/logo-crew.png" alt="Logo" class="logo">
+    <h1>Coleccion‎ ‎JDM</h1>
+    <a href="/coches-carmeet/menu-category.html" id="backButton">Volver al Menú</a>
+  </header>
+  
+  <div class="search-filters-container">
+    <section class="filters">
+      <label for="sortSelect">Ordenar por precio:</label>
+      <select id="sortSelect">
+        <option value="default">Por defecto</option>
+        <option value="asc">Menor a mayor</option>
+        <option value="desc">Mayor a menor</option>
+      </select>
+    </section>
+    <section class="search">
+      <input type="text" id="searchInput" placeholder="Buscar por nombre o categoría">
+    </section>
+  </div>
+
+  <section class="info">
+    <p id="totalVehicles"></p>
+  </section>
+  
+  <section class="cars-container" id="carsContainer"></section>
+  
+  <div id="pagination"></div>
+  
+  <footer>
+    <p>&copy; 2025 Full Throttle Family</p>
+  </footer>
+  
+  <script>
+    const backButton = document.getElementById('backButton');
+    backButton.addEventListener('click', () => {
+      window.location.href = "index.html"; // Cambia a la página principal
+    });
+
+    const container = document.getElementById('carsContainer');
+    const searchInput = document.getElementById('searchInput');
+    const sortSelect = document.getElementById('sortSelect');
+    const totalVehiclesEl = document.getElementById('totalVehicles');
+    const paginationContainer = document.getElementById('pagination');
+
+    const itemsPerPage = 12;
+    let currentPage = 1;
+    let currentCars = cars;
+    let currentSort = "default";
+
+    function getPrice(car) {
+      let priceStr = car.price.replace(/\$/g, '').replace(/,/g, '');
+      return priceStr === "N/A" ? null : parseFloat(priceStr);
+    }
+
+    function sortCars(carList, sortOrder) {
+      if (sortOrder === "default") return carList;
+      return [...carList].sort((a, b) => {
+        const aPrice = getPrice(a);
+        const bPrice = getPrice(b);
+        if (aPrice === null) return 1;
+        if (bPrice === null) return -1;
+        return sortOrder === "asc" ? aPrice - bPrice : bPrice - aPrice;
+      });
+    }
+
+    function displayCars(carList, page = 1) {
+      let sortedCars = sortCars(carList, currentSort);
+      totalVehiclesEl.textContent = `Total: ${sortedCars.length} vehículos`;
+      const startIndex = (page - 1) * itemsPerPage;
+      const paginatedCars = sortedCars.slice(startIndex, startIndex + itemsPerPage);
+
+      container.innerHTML = '';
+      paginatedCars.forEach(car => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${car.img}" alt="${car.name}">
+          <h2>${car.name}</h2>
+          <p><strong>Categoría:</strong> ${car.category}</p>
+          <p><strong>Precio:</strong> ${car.price}</p>
+          <p><strong>Basado en:</strong> ${car.basedOn}</p>
+        `;
+        container.appendChild(card);
+      });
+
+      renderPagination(sortedCars, page);
+    }
+
+    function renderPagination(carList, page) {
+      paginationContainer.innerHTML = '';
+      const totalPages = Math.ceil(carList.length / itemsPerPage);
+      if (totalPages <= 1) return;
+
+      const prevButton = document.createElement('button');
+      prevButton.textContent = "Anterior";
+      prevButton.disabled = page === 1;
+      prevButton.addEventListener('click', () => {
+        currentPage--;
+        displayCars(currentCars, currentPage);
+      });
+      paginationContainer.appendChild(prevButton);
+
+      for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.textContent = i;
+        if (i === page) pageButton.classList.add('active');
+        pageButton.addEventListener('click', () => {
+          currentPage = i;
+          displayCars(currentCars, currentPage);
+        });
+        paginationContainer.appendChild(pageButton);
+      }
+
+      const nextButton = document.createElement('button');
+      nextButton.textContent = "Siguiente";
+      nextButton.disabled = page === totalPages;
+      nextButton.addEventListener('click', () => {
+        currentPage++;
+        displayCars(currentCars, currentPage);
+      });
+      paginationContainer.appendChild(nextButton);
+    }
+
+    displayCars(cars, currentPage);
+
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      currentCars = cars.filter(car =>
+        car.name.toLowerCase().includes(term) ||
+        car.category.toLowerCase().includes(term)
+      );
+      currentPage = 1;
+      displayCars(currentCars, currentPage);
+    });
+
+    sortSelect.addEventListener('change', (e) => {
+      currentSort = e.target.value;
+      currentPage = 1;
+      displayCars(currentCars, currentPage);
+    });
+  </script>
+
+</body>
+</html>

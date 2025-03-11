@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Throttle Garaje</title>
+    <link rel="stylesheet" href="estilomenu.css">
+    <link rel="icon" href="/img-web/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="/img-web/logo-crew.png" alt="Logo" class="logo">
+        <h1>Categorías de Colección</h1>
+        <a href="https://lkdasj.github.io/FullThrottleFamilyGTAV/" id="backButton">Volver a la página principal</a>
+    </header>
+
+    <main>
+        <section class="search">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre de colección">
+        </section>
+        <section id="coleccionContainer" class="coleccion-container"></section>
+        <div id="pagination"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Full Throttle Family</p>
+    </footer>
+
+    <script>
+        // Datos de las colecciones (puedes agregar más)
+        const colecciones = [
+            { 
+                nombre: "Coleccion JDM", 
+                imagen: "https://i.ibb.co/ZRQ2g84g/jdm.png", 
+                enlace: "/coches-carmeet/jdm/jdm.html", 
+                descripcion: "Autos y piezas fabricados exclusivamente para el mercado japonés, con rendimiento, diseño y tecnología avanzada." 
+            },
+        ];
+
+        const itemsPerPage = 10;
+        let currentPage = 1;
+
+        // Función para renderizar las colecciones
+        function renderCollections(filter = "") {
+            const container = document.getElementById("coleccionContainer");
+            const pagination = document.getElementById("pagination");
+            container.innerHTML = "";
+            pagination.innerHTML = "";
+
+            // Filtrar las colecciones por nombre si hay un filtro activo
+            const filteredCollections = colecciones.filter(coleccion => 
+                coleccion.nombre.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedItems = filteredCollections.slice(startIndex, endIndex);
+
+            paginatedItems.forEach(coleccion => {
+                const card = document.createElement("div");
+                card.classList.add("coleccion-card");
+                card.innerHTML = `
+                    <img src="${coleccion.imagen}" alt="${coleccion.nombre}">
+                    <h3>${coleccion.nombre}</h3>
+                    <p>${coleccion.descripcion}</p>
+                    <a href="${coleccion.enlace}" class="btn-ver-mas">Ver Coleccion</a>
+                `;
+                container.appendChild(card);
+            });
+
+            // Renderizar la paginación
+            renderPagination(filteredCollections.length);
+        }
+
+        // Función para renderizar la paginación
+        function renderPagination(totalItems) {
+            const paginationContainer = document.getElementById("pagination");
+            paginationContainer.innerHTML = "";
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement("button");
+                btn.textContent = i;
+                btn.classList.add("page-btn");
+                if (i === currentPage) btn.classList.add("active");
+                btn.addEventListener("click", () => {
+                    currentPage = i;
+                    renderCollections(document.getElementById("searchInput").value);
+                });
+                paginationContainer.appendChild(btn);
+            }
+        }
+
+        // Evento para la búsqueda en tiempo real
+        document.getElementById("searchInput").addEventListener("input", (e) => {
+            currentPage = 1;
+            renderCollections(e.target.value);
+        });
+
+        // Renderizar colecciones por primera vez
+        renderCollections();
+
+    </script>
+</body>
+</html>
