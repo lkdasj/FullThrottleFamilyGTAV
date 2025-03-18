@@ -161,7 +161,7 @@ header h1 {
 }
 .card:hover {
   transform: translateY(-8px);
-  border-color: #39ff14;
+  border-color: #ff1414;
 }
 .card img {
   width: 100%;
