@@ -208,6 +208,10 @@ ul li {
     background: #7289da;
     color: #fff;
   }
+
+  .social-icon.reddit:hover {
+    background: #FF4500;
+  }
   
   /* Responsivo */
   @media (max-width: 600px) {
