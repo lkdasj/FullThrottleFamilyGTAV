@@ -205,11 +205,38 @@ footer {
     .coleccion-container {
       grid-template-columns: repeat(2, 1fr);
     }
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    .logo {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    #backButton {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
   }
   
   /* Móviles muy pequeños: 1 columna */
   @media (max-width: 480px) {
     .coleccion-container {
       grid-template-columns: repeat(1, 1fr);
+    }
+    header h1 {
+      font-size: 30px;
+    }
+    #backButton {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+    .search input, .filters select {
+      width: 100%;
+      max-width: none;
     }
   }

@@ -28,7 +28,6 @@ header {
     max-width: 30%; /* Aumenté el tamaño de la imagen */
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agregué sombra suave */
 }
 
 /* Section styling */
@@ -213,15 +212,7 @@ ul li {
     background: #FF4500;
   }
   
-  /* Responsivo */
-  @media (max-width: 600px) {
-    .social-card-container {
-      gap: 20px;
-    }
-    .social-card {
-      width: 100px;
-    }
-  }
+  
   
 
 /* Sección "Explora más" */
@@ -347,16 +338,7 @@ footer {
         font-size: 1.5em;
     }
 
-    /* Explora más */
-    .explore-cards {
-        flex-direction: column; /* Cambiar a columna en dispositivos móviles */
-        align-items: center;
-    }
-
-    .explore-card {
-        width: 90%;
-        max-width: 170px; /* Ajustar el tamaño de las tarjetas */
-    }
+    
 }
 
 /* Vista móvil extra pequeña (para dispositivos muy pequeños) */
@@ -381,11 +363,6 @@ footer {
     /* Ajustes adicionales para pantallas muy pequeñas */
     .header-image {
         max-width: 70%;
-    }
-
-    .explore-card {
-        width: 90%;
-        max-width: 170px;
     }
 
     .join-button {
