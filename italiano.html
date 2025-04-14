@@ -47,6 +47,17 @@
   <footer>
     <p>&copy; 2025 Comunidad Full Throttle Family</p>
   </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalCategory"></p>
+      <p id="modalPrice"></p>
+      <p id="modalBasedOn"></p>
+    </div>
+  </div>
   
   <script>
     const backButton = document.getElementById('backButton');
@@ -98,6 +109,16 @@
           <p><strong>Precio:</strong> ${car.price}</p>
           <p><strong>Basado en:</strong> ${car.basedOn}</p>
         `;
+
+        card.addEventListener('click', () => {
+            document.getElementById('modalImg').src = car.img;
+            document.getElementById('modalTitle').textContent = car.name;
+            document.getElementById('modalCategory').textContent =`Categoría: ${car.category}`;
+            document.getElementById('modalPrice').textContent = `Precio: ${car.price}`;
+            document.getElementById('modalBasedOn').textContent = `Basado en: ${car.basedOn}`;
+            document.getElementById('modal').style.display = 'block';
+        });
+
         container.appendChild(card);
       });
 
@@ -156,6 +177,16 @@
       currentSort = e.target.value;
       currentPage = 1;
       displayCars(currentCars, currentPage);
+    });
+
+    document.querySelector('.close-btn').addEventListener('click', () => {
+      document.getElementById('modal').style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target.id === 'modal') {
+        document.getElementById('modal').style.display = 'none';
+      }
     });
   </script>
 
