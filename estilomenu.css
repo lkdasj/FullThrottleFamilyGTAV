@@ -92,7 +92,7 @@ header {
 /* Contenedor de colecciones */
 .coleccion-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
     gap: 45px 20px;
     padding: 20px;
     justify-items: center;

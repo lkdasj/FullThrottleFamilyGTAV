@@ -142,8 +142,7 @@
     searchInput.addEventListener('input', (e) => {
       const term = e.target.value.toLowerCase();
       currentCars = cars.filter(car =>
-        car.name.toLowerCase().includes(term) ||
-        car.category.toLowerCase().includes(term)
+        car.name.toLowerCase().includes(term)
       );
       currentPage = 1;
       displayCars(currentCars, currentPage);

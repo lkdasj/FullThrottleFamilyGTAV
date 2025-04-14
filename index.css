@@ -341,6 +341,12 @@ footer {
     
 }
 
+@media (max-width:600px) {
+  .explore-card {
+    width: 140px;
+  }
+}
+
 /* Vista móvil extra pequeña (para dispositivos muy pequeños) */
 @media (max-width: 480px) {
     body{
