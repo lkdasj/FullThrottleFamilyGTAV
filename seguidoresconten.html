@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Seguidores Estrellas</title>
+  <link rel="stylesheet" href="seguidoresconten.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img-web/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <img src="img-web/logo-crew.png" alt="Logo" class="logo">
+    <h1>Nuestros Seguidores Estrellas</h1>
+    <a href="https://lkdasj.github.io/FullThrottleFamilyGTAV/" id="backButton">Volver principal</a>
+  </header>
+
+  <main class="contenedor" id="top">
+    <h1>Los que siempre están presentes y damos ayuda mutuamente</h1>
+
+    <div class="filtro-desplegable">
+      <input type="text" id="buscador" placeholder="Buscar seguidores…">
+      <button onclick="toggleMenu()">Filtrar Seguidores ▼</button>
+      <div id="menuOpciones" class="opciones" style="display: none;">
+        <button onclick="filtrarRed('Instagram')">Instagram</button>
+        <button onclick="filtrarRed('Twitter')">Twitter</button>
+        <button onclick="filtrarRed('TikTok')">TikTok</button>
+        <button onclick="filtrarRed('Facebook')">Facebook</button>
+        <button onclick="filtrarRed('Twitch')">Twitch</button>
+        <button onclick="filtrarRed('Kick')">Kick</button>
+        <button onclick="filtrarRed('YouTube')">YouTube</button>
+        <button onclick="reiniciarFiltros()">Todos</button>
+      </div>
+    </div>    
+
+    <div class="seguidores-lista"></div>
+
+    <div class="paginacion">
+      <button id="btn-anterior" onclick="cambiarPagina(-1)">Anterior</button>
+      <button id="btn-siguiente" onclick="cambiarPagina(1)">Siguiente</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Comunidad Full Throttle Family</p>
+  </footer>
+
+  <script src="seguidore.js"></script>
+  <script>
+    let paginaActual = 1;
+    const perfilesPorPagina = 10;
+    let textoBusqueda = "";
+    let filtroRed = null;
+    let ordenarAscendente = null;
+
+    function renderizarLista() {
+      let lista = [...seguidores];
+
+      if (filtroRed) {
+        lista = lista.filter(s => s.enlaces.some(e => e.red === filtroRed));
+      }
+
+      if (textoBusqueda.trim()) {
+        lista = lista.filter(s => s.nombre.toLowerCase().includes(textoBusqueda.toLowerCase()));
+      }
+
+      if (ordenarAscendente !== null) {
+        lista.sort((a, b) =>
+          ordenarAscendente
+            ? a.prioridad - b.prioridad
+            : b.prioridad - a.prioridad
+        );
+      }
+
+      const inicio = (paginaActual - 1) * perfilesPorPagina;
+      const fin = inicio + perfilesPorPagina;
+      const mostrados = lista.slice(inicio, fin);
+
+      const cont = document.querySelector('.seguidores-lista');
+      cont.innerHTML = "";
+
+      if (!mostrados.length) {
+        cont.innerHTML = "<p>No se encontraron seguidores.</p>";
+      } else {
+        mostrados.forEach(s => {
+          const icons = s.enlaces.map(e => {
+            let cls = "";
+            switch (e.red) {
+              case "Instagram": cls = "fab fa-instagram"; break;
+              case "Twitter": cls = "fab fa-twitter"; break;
+              case "TikTok": cls = "fab fa-tiktok"; break;
+              case "Twitch": cls = "fab fa-twitch"; break;
+              case "Kick": cls = "fas fa-bolt"; break;
+              case "Facebook": cls = "fab fa-facebook"; break;
+              case "YouTube": cls = "fab fa-youtube"; break;
+            }
+            return `<a href="${e.url}" target="_blank"><i class="${cls}"></i></a>`;
+          }).join("");
+
+          cont.innerHTML += `
+            <div class="seguidor zoom-in">
+              <img src="${s.imagen}" alt="${s.nombre}">
+              <div class="info">
+                <p class="nombre">${s.nombre}</p>
+                <div class="redes">${icons}</div>
+              </div>
+            </div>
+          `;
+        });
+      }
+      actualizarBotones(lista.length);
+    }
+
+    function actualizarBotones(totalItems) {
+      const totalPaginas = Math.ceil(totalItems / perfilesPorPagina);
+      document.getElementById('btn-anterior').style.display = paginaActual > 1 ? "inline-block" : "none";
+      document.getElementById('btn-siguiente').style.display = paginaActual < totalPaginas ? "inline-block" : "none";
+    }
+
+    function buscar() {
+      textoBusqueda = document.getElementById('buscador').value;
+      paginaActual = 1;
+      renderizarLista();
+    }
+
+    function ordenarPorPrioridad(asc) {
+      ordenarAscendente = asc;
+      paginaActual = 1;
+      renderizarLista();
+    }
+
+    function filtrarRed(red) {
+      filtroRed = red;
+      paginaActual = 1;
+      renderizarLista();
+    }
+
+    function reiniciarFiltros() {
+      filtroRed = null;
+      ordenarAscendente = null;
+      textoBusqueda = "";
+      document.getElementById('buscador').value = "";
+      paginaActual = 1;
+      renderizarLista();
+    }
+
+    function toggleMenu() {
+        const menu = document.getElementById('menuOpciones');
+        if (menu.style.display === 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+
+
+    function cambiarPagina(delta) {
+      paginaActual += delta;
+      renderizarLista();
+      subir();
+    }
+
+    function subir() {
+      document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('buscador').addEventListener('input', buscar);
+        renderizarLista();
+    });
+
+    function renderizarFiltros() {
+      const redesDisponibles = new Set();
+
+      seguidores.forEach(s => {
+        s.enlaces.forEach(e => redesDisponibles.add(e.red));
+      });
+
+      const menu = document.getElementById('menuOpciones');
+      menu.innerHTML = ""; // Limpiar filtros anteriores
+
+      redesDisponibles.forEach(red => {
+        menu.innerHTML += `<button onclick="filtrarRed('${red}')">${red}</button>`;
+      });
+
+      menu.innerHTML += `<button onclick="reiniciarFiltros()">Todos</button>`;
+    }
+
+    renderizarFiltros();  // Llama esto antes o después de cargar seguidores
+
+
+  </script>
+
+</body>
+</html>

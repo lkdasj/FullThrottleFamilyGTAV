@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <header>
+  <header id="top">
     <img src="img-web/logo-crew.png" alt="Logo" class="logo">
     <h1>Coleccion‎ ‎Drift</h1>
     <a href="menu-category.html" id="backButton">Volver al Menú</a>
@@ -154,6 +154,7 @@
         displayCars(currentCars, currentPage);
       });
       paginationContainer.appendChild(nextButton);
+      subir();
     }
 
     displayCars(cars, currentPage);
@@ -182,6 +183,10 @@
         document.getElementById('modal').style.display = 'none';
       }
     });
+
+    function subir() {
+      document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
+    }
 
   </script>
 
